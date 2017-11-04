@@ -1,5 +1,7 @@
 ---
 layout: default
+title: **PHILLE**CONNECT
+permalink: /index.html
 ---
 
 # **PHILLE**CONNECT

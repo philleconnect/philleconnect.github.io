@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+  <div role="main" class="main">
+    <a href="#nav" class="nav-toggle">Menu</a>
+    <noscript>
+      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+    </noscript>
+    {{ content }}
+  </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

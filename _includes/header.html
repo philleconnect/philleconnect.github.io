@@ -1,0 +1,22 @@
+<header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse">
+        <div class="top">
+			<a href="{{baseurl}}/index.html">
+				<img src="/assets/images/logo.png">
+				<li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+		<nav>
+			<ul>
+				{% for item in site.pages %} {% if item.title %}
+						<li{% if item.url == page.url %} class="active"{% endif %}>
+							<a href="{{ item.url | prepend: item.baseurl }}">{{ item.title }}</a>
+						</li>
+				{% endif %} {% endfor %}
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+

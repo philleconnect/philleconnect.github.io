@@ -20,22 +20,22 @@ markdown: kramdown
 
 # GitHub default (can be set to custom stuff)
 #github: [metadata]
-encoding: UTF-8
-kramdown:
-  input: GFM
-  hard_wrap: false
-future: true
-jailed: false
-theme: jekyll-theme-primer
-gfm_quirks: paragraph_end
-# GitHub default (will be overwritten by GitHub)
-lsi: false
-safe: true
-source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+#encoding: UTF-8
+#kramdown:
+#  input: GFM
+#  hard_wrap: false
+#future: true
+#jailed: false
+#theme: jekyll-theme-primer
+#gfm_quirks: paragraph_end
+# GitHub default (would be overwritten by GitHub)
+#lsi: false
+#safe: true
+#source: [your repo's top level directory]
+#incremental: false
+#highlighter: rouge
+#gist:
+#  noscript: false
+#kramdown:
+#  math_engine: mathjax
+#  syntax_highlighter: rouge

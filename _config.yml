@@ -6,15 +6,36 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: PhilleConnect
+email: it@polarwinkel.de
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The Free and Open Source, Modular, Docker-Based School Network Solution
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://philleconnect.org" # the base hostname & protocol for your site
 
 include: ['_pages']
 # Build settings
 markdown: kramdown
+
+
+# GitHub default (can be set to custom stuff)
+#github: [metadata]
+encoding: UTF-8
+kramdown:
+  input: GFM
+  hard_wrap: false
+future: true
+jailed: false
+theme: jekyll-theme-primer
+gfm_quirks: paragraph_end
+# GitHub default (will be overwritten by GitHub)
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge

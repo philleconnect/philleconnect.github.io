@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Impressum
-permalink: /impressum/
+permalink: /impressum
+tags: main
+lang: de
 ---
 
-# Impressum
+# **Impressum**
 
 ## Ansprechpartner & Verantwortlich:
 

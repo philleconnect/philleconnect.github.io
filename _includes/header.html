@@ -2,21 +2,43 @@
 <aside>
     <div role="navigation" id="foo" class="nav-collapse">
         <div class="top">
-			<a href="{{baseurl}}/index.html">
-				<img src="/assets/images/logo.png">
-				<li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            <a href="{{baseurl}}/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
             </a>
         </div>
-		<nav>
-			<ul>
-				{% for item in site.pages %} {% if item.title %}
-						<li{% if item.url == page.url %} class="active"{% endif %}>
-							<a href="{{ item.url | prepend: item.baseurl }}">{{ item.title }}</a>
-						</li>
-				{% endif %} {% endfor %}
-			</ul>
-		</nav>
-	</div>
+        <nav>
+            <ul>
+                <li><a href="{{baseurl}}/index" style="color:#fff; text-align:center; font-weight:normal;">Info's für:</a></li>
+                {% for item in site.pages %} {% if item.tags contains 'main' %}
+                    {% if item.url contains page.url %}
+                        <li class="active">
+                            <a href="{{ item.url | prepend: item.baseurl }}">{{ item.title }}</a>
+                        </li>
+                        {% for i in site.pages %} {% if i.tags contains item.title %}
+                            <li><a href="{{ i.url }}" class="subnav">{{ i.title }}</a></li>
+                        {% endif %} {% endfor %}
+                    {% elsif page.tags contains item.title %}
+                        {% assign tag = item.title %}
+                        <li>
+                            <a href="{{ item.url | prepend: item.baseurl }}">{{ item.title }}</a>
+                        </li>
+                        {% for ite in site.pages %} {% if ite.tags contains tag %}
+                            {% if ite.url == page.url %}
+                                <li class="active"><a href="{{ ite.url }}" class="subnav">{{ ite.title }}</a></li>
+                            {% else %}
+                                <li><a href="{{ ite.url }}" class="subnav">{{ ite.title }}</a></li>
+                            {% endif %}
+                        {% endif %} {% endfor %}
+                    {% else %}
+                        <li>
+                            <a href="{{ item.url | prepend: item.baseurl }}">{{ item.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endif %} {% endfor %}
+            </ul>
+        </nav>
+    </div>
 </aside>
 
 

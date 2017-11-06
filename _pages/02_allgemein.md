@@ -31,3 +31,15 @@ Ganz im Sinne der didaktischen Reduktion darf das Produkt nicht im Weg stehen, s
 Daher sind nur die für die pädagogische Arbeit nötigen Features wie Monitorkontrolle, Speicherverwaltung und Internetkontrolle eingebaut.
 
 Für allgemeine Aufgaben der IT-Verwaltung wie Softwareverteilung gibt es allgemeine Werkzeuge, dies hat keinen zentralen Platz in einen pädagogischen Netzwerk. Sie können allenfalls eine optionale Komponente darstellen.
+
+### Sicherheit: Schütze das Schützenswerte, eine Schule ist aber ein pädagogischer Ort, kein Gefängnis
+
+Passwörter werden verschlüsselt - keine Frage. Auch die von Schülern. Sie dürfen auch nicht vom Admin oder nach einem erfolgreichen Hack einsehbar sein.
+
+Schutz gegen Manipulation ist jedoch keine Frage der Sicherheit.
+
+Dem natürlichen Spieldrang von SchülerInnen sollte Rechnung getragen werden, all zu leicht sollte sich der Unterricht nicht stören lassen, insbesondere auch um weniger versierten KollegInnen eine motivierende Arbeit an PC zu ermöglichen.
+
+Ein beliebiger Schutz vor Manipulation ist jedoch weder möglich noch zielführend. So ist es nicht möglich SchülerInnen davon ab zu halten Tasten zu vertauschen, sehr versierte Schüer schaffen es auch immer Dinge wie den VNC-Dienst zu blockieren. Hier ist jedoch pädagogisches, nicht technisches Handeln gefragt.
+
+Oder schließen Sie in Ihrer Schule die Tafeln nach dem Unterricht ab, damit keine SchülerInnen Herzchen oder Penisse daran malen?

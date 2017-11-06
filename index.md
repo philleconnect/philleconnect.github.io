@@ -11,6 +11,8 @@ PhilleConnect ist gerade dabei eine moderne, modulare OpenSource Schulnetzwerk-V
 
 Das Projekt befindet sich gerade (November 2017) in sehr aktiver Entwicklung, im [GitHub-Pepository](https://github.com/philleconnect/) finden sich Beta-Versionen von Server und Client. Bitte beachten sie die aktuell noch vorhandenen [Bugs](https://github.com/philleconnect/ServerContainers/issues)!
 
+Eine gute Vorstellung was da kommt geben aber schon mal die [Screenshots](/allgemeines/screenshots)!
+
 Aber: Bis auf die Bugs ist die Struktur fertig und wird bereits in unserer Schule im Produktivbetrieb eingesetzt.
 
 ## **NETZWERK**STRUKTUR

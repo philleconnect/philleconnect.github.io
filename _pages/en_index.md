@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /index.html
+permalink: /en_index.html
 lang: en
 ---
 

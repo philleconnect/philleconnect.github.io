@@ -15,5 +15,5 @@ Aber: Bis auf die Bugs ist die Struktur fertig und wird bereits in unserer Schul
 
 ## **NETZWERK**STRUKTUR
 
-[//]: <> [image-title-here]({{baseurl}}/assets/images/architecture.png)
+[//]: <> ![image-title-here]({{baseurl}}/assets/images/architecture.png)
 <img src="{{baseurl}}/assets/images/architecture.png" width="100%" />

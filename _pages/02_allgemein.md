@@ -34,12 +34,16 @@ Für allgemeine Aufgaben der IT-Verwaltung wie Softwareverteilung gibt es allgem
 
 ### Sicherheit: Schütze das Schützenswerte, eine Schule ist aber ein pädagogischer Ort, kein Gefängnis
 
+Die Heimat von PhilleConnect ist die Schule von [Wau Holland](https://de.wikipedia.org/wiki/Wau_Holland){:target="_blank"}. Wir denken aus seinem Vorbild können wir viel lernen.
+
 Passwörter werden verschlüsselt - keine Frage. Auch die von Schülern. Sie dürfen auch nicht vom Admin oder nach einem erfolgreichen Hack einsehbar sein.
 
-Schutz gegen Manipulation ist jedoch keine Frage der Sicherheit.
+Schutz gegen Manipulation ist jedoch *keine* Frage der Sicherheit.
 
 Dem natürlichen Spieldrang von SchülerInnen sollte Rechnung getragen werden, all zu leicht sollte sich der Unterricht nicht stören lassen, insbesondere auch um weniger versierten KollegInnen eine motivierende Arbeit an PC zu ermöglichen.
 
 Ein beliebiger Schutz vor Manipulation ist jedoch weder möglich noch zielführend. So ist es nicht möglich SchülerInnen davon ab zu halten Tasten zu vertauschen, sehr versierte Schüer schaffen es auch immer Dinge wie den VNC-Dienst zu blockieren. Hier ist jedoch pädagogisches, nicht technisches Handeln gefragt.
 
 Oder schließen Sie in Ihrer Schule die Tafeln nach dem Unterricht ab, damit keine SchülerInnen Herzchen oder Penisse daran malen?
+
+Nur wer in padagogisch unterstützter Freiheit verantwortungsvoll Grenzen ausloten darf, und dabei durch Pädagogen zu ethischem und sozialem Handeln angeleitet, und nicht durch technische Sperren eingeschränkt und angestachelt wird, kann sich zu einem mündigen Mitglied in unserer Welt der immer weiter zunehmenden Datenverarbeitung entwickeln.

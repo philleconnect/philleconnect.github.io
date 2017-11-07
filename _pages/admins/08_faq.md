@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FAQ
-permalink: /admins/faq
+permalink: /admins/Faq
 tags: Admins
 lang: de
 ---

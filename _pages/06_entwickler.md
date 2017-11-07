@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Entwickler
-permalink: /entwickler
+permalink: /Entwickler
 tags: main
 lang: de
 ---

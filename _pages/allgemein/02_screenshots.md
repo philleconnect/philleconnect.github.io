@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Screenshots
-permalink: /allgemeines/screenshots
+permalink: /allgemein/Screenshots
 tags: Allgemein
 lang: de
 ---

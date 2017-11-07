@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Allgemein
-permalink: /allgemein
+permalink: /Allgemein
 tags: main
 lang: de
 ---

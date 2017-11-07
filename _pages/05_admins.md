@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Admins
-permalink: /admin
+permalink: /Admins
 tags: main
 lang: de
 ---

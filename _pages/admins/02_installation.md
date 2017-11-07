@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Installation
-permalink: /admins/installation
+permalink: /admins/Installation
 tags: Admins
 lang: de
 ---

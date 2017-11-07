@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Anwender
-permalink: /user
+permalink: /Anwender
 tags: main
 lang: de
 ---

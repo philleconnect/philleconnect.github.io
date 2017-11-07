@@ -16,7 +16,11 @@ url: "http://philleconnect.org" # the base hostname & protocol for your site
 include: ['_pages']
 # Build settings
 markdown: kramdown
-
+# Syntax highlighting
+highlighter: rouge
+kramdown:
+    input: GFM 
+    syntax_highlighter: rouge
 
 # GitHub default (can be set to custom stuff)
 #github: [metadata]

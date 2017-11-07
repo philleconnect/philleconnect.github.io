@@ -8,7 +8,7 @@ lang: de
 
 # **ALLGEMEINE**INFOS
 
-## PHILOSOPHIE
+## Philosophie
 
 ### [FOSS](https://de.wikipedia.org/wiki/Free/Libre_Open_Source_Software){:target="_blank"}: Freie Software in kleinen Modulen
 

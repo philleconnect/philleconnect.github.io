@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Installation
-permalink: /admins/Installation
+permalink: /admin/Installation
 tags: Admins
 lang: de
 ---
 
 # **INSTALLIEREN**
 
-## **SERVER**INSTALLATION
+## Server
 
 Die Installation des Servers ist in wenigen Schritten erledigt:
 
@@ -21,7 +21,7 @@ Die Installation des Servers ist in wenigen Schritten erledigt:
 * Wenn der Kaffee leer ist kannst du auf dem Rechner im Browser zu `http://localhost:84/setup/` gehen. Die wesentlichen Daten sind bereits eingetragen, ausser die Verbindung zur ipFire, die erstmal nicht nötig ist.
 * Fertig.
 
-## **CLIENT**INSTALLATION
+## Client
 
 Dies ist so einfach, dass erst eine Anleitung folgt wenn wir bei der Stable-Version sind.
 

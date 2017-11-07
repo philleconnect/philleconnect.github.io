@@ -8,4 +8,4 @@ lang: en, de
 
 # **FREQUENT**QUESTIONS
 
-- no questions asked yet -
+(no questions asked yet)

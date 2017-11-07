@@ -1,7 +1,7 @@
 ---
 layout: page
 title: AdminFrontend
-permalink: /entwickler/Faq
+permalink: /entwickler/AdminFrontend
 tags: Entwickler
 lang: en, de
 ---

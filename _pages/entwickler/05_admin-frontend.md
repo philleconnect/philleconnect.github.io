@@ -6,7 +6,7 @@ tags: Entwickler
 lang: en, de
 ---
 
-# **TEACHER**APPLICATION
+# **ADMIN**FRONTEND
 
 The sdmin-frontent is available by accessing the network address of the docker-host it runs on on port 84 for unencrypted acces or on port 447 for encrypted access with a self signed certificate (has to be accepted in the browser on first access).
 

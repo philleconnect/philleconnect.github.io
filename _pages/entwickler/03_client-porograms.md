@@ -16,29 +16,28 @@ The PhilleConnect Drive application has the main purpose to handle the authentic
 
 When installed with the Installer the RunOnceCreator, as well as the VNC-Server and a watchdog will be installed on the system.
 
-# TEACHER
+## TEACHER
 
 The PhilleConnect Teacher application includes the functions of the PhilleConnect Drive application and extends it with Screes for monitoring and controlling student PCs in a PC room.
 
 The RunOnceCreator will be installed by the installer as well.
 
-# START
+## START
 
 The Login-screen that is shown when you boot up Windows.
 
-# RunOneCreator
+## RunOneCreator
 
 The RunOnceCreator takes care that the Login-Application will be started every time Windows boots up.
 
-# Systemclient
+## Systemclient
 
 This controls the Access to student PCs.
 
-# ClientRegistrationTool
+## ClientRegistrationTool
 
 This makes it easy to add new Client PCs to the Server.
 
-# Lockscreen
+## Lockscreen
 
 ...guess from the name!
-

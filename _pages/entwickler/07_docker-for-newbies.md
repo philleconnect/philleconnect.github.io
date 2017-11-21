@@ -1,7 +1,7 @@
 ---
 layout: page
-title: DockerNewbie
-permaleink: /entwickler/DockerNewbie
+title: DockerForNewbies
+permaleink: /entwickler/DockerForNewbies
 tags: Entwickler
 lang: en, de
 ---
@@ -10,7 +10,7 @@ lang: en, de
 
 You have heared about the buzz-word "docker" but have never used it?
 
-No Problem, although there are plenty of "Getting Started with Docker"-Tutorials out there here is a really quick summary/command reference of the most important things for the work with PhilleConnect:
+No Problem, although there are plenty of "Getting Started with Docker"-Tutorials out there here is a really quick summary/command reference of the most important things for the work with PhilleConnect.
 
 ### `docker-compose up --build -d`
 This will bring up all the containers configured in the `docker-compose.yml` in the working directory.

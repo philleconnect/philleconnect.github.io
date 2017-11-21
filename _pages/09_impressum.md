@@ -8,6 +8,8 @@ lang: de
 
 # **Impressum**
 
+Diese Webpräsenz verfolgt keine kommerziellen Interessen.
+
 ## Ansprechpartner & Verantwortlich:
 
 Dirk Winkel
@@ -20,7 +22,7 @@ GERMANY
 
  
 
-eMail: it [ät] polarwinkel [doot] de 
+eMail: it [ät] polarwinkel [punkt] de 
 
 ## Disclaimer
 

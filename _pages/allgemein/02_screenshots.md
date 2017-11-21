@@ -20,9 +20,9 @@ Kontrollfunktionen über die Schülerrechner
 
 Anzeige der Schülermonitore, mit einem Klick können diese per VNC vergrößert und ferngesteuert werden.
 
-![Reset Student Password]({{baseurl}}/assets/images/ScreenPasswordReset.png)
+![Reset Student Password]({{baseurl}}/assets/images/RSPForm.png)
 
-Lehrer können Schüler ein vergessenes Passwort neu setzen lassen. Die Passwörter sind natürlich nicht einsehbar und sind auf dem Server verschlüsselt.
+Hier mal unter Windows 10: Lehrer können Schüler ein vergessenes Passwort neu setzen lassen. Die Passwörter sind natürlich nicht einsehbar und sind auf dem Server verschlüsselt.
 
 ![Student Client]({{baseurl}}/assets/images/ScreenDrive.png)
 

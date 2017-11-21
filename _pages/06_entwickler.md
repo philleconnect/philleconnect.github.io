@@ -14,11 +14,13 @@ Sie möchten Ihre Installation durch einene Dieste erweitern?
 
 Sie möchten als erfahrener Administrator eigene Ideen einbauen?
 
-Oder sogar mithelfen, PhilleConnect durch eingene Anpassungen oder Elemente weiter zu entwickeln?
+Oder sogar mithelfen, PhilleConnect durch eingene Anpassungen oder Elemente weiter zu entwickeln? Vielleicht einen hübschen Docker-Container beisteuern?
 
-In jedem Fall werden Sie hier Informationen finden, wie Sie PhilleConnect für Ihre Bedürfnisse anpassen und erweitern können!
+In jedem Fall werden Sie hier die wichtigsten Informationen im Überblick finden, wie Sie PhilleConnect für Ihre Bedürfnisse anpassen und erweitern können!
 
-Nur: **Ab hier wird englisch gesprochen!**
+Für tiefere Einblicke, Diskussionen, Wiki, Forum, ... sei jedoch auf das [GitHub-Repository](https://github.com/philleconnect/) verwiesen, wo sicher die aktuellsten Infos zu finden sind.
+
+Nur: **Ab hier wird englisch gesprochen!** Assuming that PhilleConnect will be of intesest also in other than german speaking countries...
 
 Happy Hacking!
 

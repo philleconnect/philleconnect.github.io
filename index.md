@@ -15,7 +15,7 @@ Eine gute Vorstellung was da kommt geben aber schon mal die [Screenshots](/allge
 
 Bis auf (mittlerweile weitgehend beseitigte) Bugs ist die Struktur fertig und wird bereits in unserer Schule im Produktivbetrieb eingesetzt.
 
-**PHILLE**CONNECT: Schlank, modular, anpasspar, erweiterbar, verständlich, nützlich, frei. Hackable.
+**PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, frei. Hackable.
 
 ## Die Netzwerk-Struktur
 

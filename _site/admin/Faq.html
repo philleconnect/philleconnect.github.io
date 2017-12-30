@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+
+	<title>FAQ</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://philleconnect.org/admin/Faq">
+
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorieen:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                    
+                    
+                        
+                        <li>
+                            <a href="/Admin">Admin</a>
+                        </li>
+                           
+                            
+                                <li><a href="/admin/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li><a href="/admin/Wartung" class="subnav">Wartung</a></li>
+                            
+                                
+                            
+                                <li><a href="/admin/Integrieren" class="subnav">Integrieren</a></li>
+                            
+                                    
+                            
+                                <li class="active"><a href="/admin/Faq" class="subnav">FAQ</a></li>
+                            
+                                 
+                    
+                      
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                       
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+  <div role="main" class="main">
+    <a href="#nav" class="nav-toggle">Menu</a>
+    <noscript>
+      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+    </noscript>
+    <!--<h1>FAQ</h1>-->
+   
+    <h1 id="fragenantworten"><strong>FRAGEN</strong>ANTWORTEN</h1>
+
+<h3 id="muss-ich-als-admin-docker-können">Muss ich als Admin Docker können?</h3>
+<p>Nein.</p>
+
+<h3 id="kann-ich-eigene-dienste-mit-dem-integrierten-ldap-authentifizieren">Kann ich eigene Dienste mit dem integrierten LDAP authentifizieren?</h3>
+<p>Ja. Dazu muss in der <code class="highlighter-rouge">docker-compose.yml</code> der LDAP-Port freigegeben werden. Vielleicht finden sich in der <a href="/entwickler">EntwicklerEcke</a> ja noch passende erweiterte Information.</p>
+
+<h3 id="können-ich-und-meine-kollegen-oder-auch-die-schüler-mit-eigenen-geräten-philleconnect-nutzen">Können ich und meine Kollegen, oder auch die Schüler, mit eigenen Geräten PhilleConnect nutzen?</h3>
+
+<p>Ja, der Samba-Server kann z.B. von jedem Windows-Gerät durch Eingabe von <code class="highlighter-rouge">\\&lt;ip-oder-hostname-des-servers&gt;\</code> im Explorer erreicht werden, von Linux-Geräten oft durch Eingabe von z.B. <code class="highlighter-rouge">smb://&lt;ip-oder-hostname-des-servers&gt;/</code>.</p>
+
+<p>Dinge wie die Monitorkontrolle funktionieren natürlich nicht ohne installierten VNC-Dienst.</p>
+
+<h3 id="beinhaltet-philleconnect-eine-softwareverteilung">Beinhaltet PhilleConnect eine Softwareverteilung?</h3>
+<p>Nein.</p>
+
+<p>One Job - one Tool.</p>
+
+<p>Das hat nichts mit Schule zu tun, es ist für uns nicht Erkennbar warum das fester Bestandteil einer Schulnetzwerklösung sein sollte, es gibt diverse Software da draussen für den Fall.</p>
+
+<p>Eine (kostenlose) Lösung für die Software-Verteilung hat das Computermagazin C’t zum Beispiel in Heft 17/2017, S.162ff vorgestellt.</p>
+
+<p>Sollte jemand eine freie Lösung zum Beispiel als Docker-Container <a href="/entwickler">entwickeln</a> nehmen wir diese gerne als optionalen Container mit auf.</p>
+
+<h3 id="beinhaltet-philleconnect-eine-imaging-lösung-um-fertige-installationen-auf-mehreren-rechnern-zu-verteilen">Beinhaltet PhilleConnect eine Imaging-Lösung um fertige Installationen auf mehreren Rechnern zu verteilen.</h3>
+<p>Nein.</p>
+
+<p>Siehe auch oben.</p>
+
+<p>Ich habe jedoch eine Imaging-Lösung auf der Grundlage eines Netzwerk-Debian-Systems und der Verwaltung des Image-Masters in VirtualBox in Betrieb. Zumindest den Boot-Server und eine Anleitung zur Image-Verwaltung möchte ich bei Zeiten als optionalen Container für PhilleConnect zur Verfügung stellen.</p>
+
+<h3 id="muss-ich-einen-ipfire-router-in-der-schule-einsetzen">Muss ich einen ipFire-Router in der Schule einsetzen?</h3>
+<p>Nein, jedoch funktioniert dann die Internetsperre nicht.</p>
+
+<p>Wenn der Router, wie z.B. TimeForKids, eine Internetsperre mitbringt kann diese einfach weiter genutzt werden.</p>
+
+<p>Auch wenn speziell TimeForKids an sich auf ipFire basiert ist diese Lösung nicht mehr frei genug um unsere Internetsperre dort einzusetzen. (Merke: Benutze nur freie Software! ;-) Wer doch eine Möglichkeit findet - gerne berichten!</p>
+
+<h3 id="beinhaltet-philleconnect-einen-festplattenschutz-wie-er-in-vielen-schulen-die-pcs-vor-veränderung-und-manipulation-schützt">Beinhaltet PhilleConnect einen Festplattenschutz, wie er in vielen Schulen die PCs vor Veränderung und Manipulation schützt?</h3>
+
+<p>Leider nein.</p>
+
+<p>Hier setzen wir noch eine kommerzielle Lösung ein.</p>
+
+<p>Wenn Sie geeignete freie Software kennen, die wir integrieren könnten, lassen Sie es uns wissen!</p>
+
+<h3 id="gibt-es-einen-klausur-modus-um-klassenarbeiten-und-klausuren-zu-schreiben">Gibt es einen Klausur-Modus um Klassenarbeiten und Klausuren zu schreiben?</h3>
+
+<p>Leider noch nicht.</p>
+
+<p>Es fehlt noch eine überzeugende Idee, wie man einen im Netz hängenden Rechner, an denen der Benutzer eigenen Code ausführen kann (was in Informatikklausuren unumgänglich ist), einen Oberstufen-festen Klausurmodus implementieren kann.</p>
+
+<p>Wir sind gerne offen für Ideen!</p>
+
+<h3 id="wie-kann-ich-dann-klausuren-schreiben">Wie kann ich dann Klausuren schreiben?</h3>
+
+<p>Ich mache es so: Ich verteile die Klausur per Raumtausch-Laufwerk, dann lasse ich das Netzwerkkabel abziehen. Wer fertig ist steckt das Kabel wieder ein und legt seine Ergebnisse in einen Ordner mit seinem Namen ins Tauschlaufwerk.</p>
+
+<p>Zugegeben, recht brute-force. Aber überzeugend sicher.</p>
+
+<p>Neue Ideen sind herzlich willkommen!</p>
+
+<h3 id="was-ist-mit-der-ebenfalls-freien-lösung-linuxmusternet-">Was ist mit der ebenfalls freien Lösung <a href="https://linuxmuster.net">LinuxMuster.net</a> ?</h3>
+
+<p>Sorry, liebe LinuxMuster, aber uns ist es zu umfangreich, zu unverständlich und nicht modular genug. Es fehlt uns die Flexibilität und der problemlose Übergang der bestehenden Lösung. Fertige Systemimages bleiben ein Stück weit Magie.</p>
+
+<p>Wir hoffen durch unsere Lösung mehr Ideen bei zu steuern, vielleicht können wir ja dann von einander lernen, möglicherweise wechselseitig auch Dinge übernehmen.</p>
+
+<p>Wer neu hier ist: Wir empfehlen auf jeden Fall auch dort mal vorbei zu schauen, auf manche mag die MusterLösung “mit allem, was man braucht. Und mehr.” sogar besser passen als PhilleConnect, was <a href="/Allgemein" target="_blank">NUR das bietet was man braucht</a>.</p>
+
+<p>Wir sind aber Stolz auf das was uns auszeichnet: schlank, modular, anpasspar, erweiterbar, verständlich. Hackable.</p>
+
+
+  </div>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

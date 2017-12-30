@@ -10,7 +10,7 @@ lang: de
 
 Sie möchten eine Kleinigkeit anpassen, wofür es keinen Button gibt?
 
-Sie möchten Ihre Installation durch einene Dieste erweitern?
+Sie möchten Ihre Installation durch eigene Dieste erweitern?
 
 Sie möchten als erfahrener Administrator eigene Ideen einbauen?
 

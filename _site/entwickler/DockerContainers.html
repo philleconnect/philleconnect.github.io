@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+
+	<title>DockerContainers</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://philleconnect.org/entwickler/DockerContainers">
+
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorieen:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                    
+                    
+                        <li>
+                            <a href="/Admin">Admin</a>
+                        </li>
+                    
+                      
+                    
+                        
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                               
+                            
+                                <li><a href="/entwickler/ClientApplications" class="subnav">ClientApplications</a></li>
+                            
+                              
+                            
+                                <li><a href="/entwickler/AdminFrontend" class="subnav">AdminFrontend</a></li>
+                            
+                              
+                            
+                                <li class="active"><a href="/entwickler/DockerContainers" class="subnav">DockerContainers</a></li>
+                            
+                            
+                            
+                                <li><a href="/_pages/entwickler/07_docker-for-newbies.html" class="subnav">DockerForNewbies</a></li>
+                            
+                            
+                            
+                                <li><a href="/entwickler/Faq" class="subnav">FAQ</a></li>
+                            
+                                   
+                    
+                          
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                       
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+  <div role="main" class="main">
+    <a href="#nav" class="nav-toggle">Menu</a>
+    <noscript>
+      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+    </noscript>
+    <!--<h1>DockerContainers</h1>-->
+   
+    <h1 id="dockercontainers"><strong>DOCKER</strong>CONTAINERS</h1>
+
+<p>The server is based on several docker containers that are started with a docker-compose file. This will start the containers in a virtual LAN and map only the ports to be accessec from outside that are configured in the <code class="highlighter-rouge">docker-compose.yml</code></p>
+
+<p>For small tasks like making the LDAP accessible from outside all that needs do be done is making the necessary setting in the <code class="highlighter-rouge">docker-compose.yml</code>.</p>
+
+<p>If you want to know how the containers work inside check out the folders where you fill find the build-process in the <code class="highlighter-rouge">Dockerfile</code> and the <code class="highlighter-rouge">entrypoint.sh</code>.</p>
+
+<p>The <code class="highlighter-rouge">mount</code> folder will keep all the Samba-data. Feel free to mount your storage solution in your network to this folder.</p>
+
+<p>More Detailled Information will be added here after we have published the stable version.</p>
+
+
+  </div>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

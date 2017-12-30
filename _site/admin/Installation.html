@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+
+	<title>Installation</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://philleconnect.org/admin/Installation">
+
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorieen:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                    
+                    
+                        
+                        <li>
+                            <a href="/Admin">Admin</a>
+                        </li>
+                           
+                            
+                                <li class="active"><a href="/admin/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li><a href="/admin/Wartung" class="subnav">Wartung</a></li>
+                            
+                                
+                            
+                                <li><a href="/admin/Integrieren" class="subnav">Integrieren</a></li>
+                            
+                                    
+                            
+                                <li><a href="/admin/Faq" class="subnav">FAQ</a></li>
+                            
+                                 
+                    
+                      
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                       
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+  <div role="main" class="main">
+    <a href="#nav" class="nav-toggle">Menu</a>
+    <noscript>
+      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+    </noscript>
+    <!--<h1>Installation</h1>-->
+   
+    <h1 id="installieren"><strong>INSTALLIEREN</strong></h1>
+
+<h2 id="server">Server</h2>
+
+<p>Die Installation des Servers ist in wenigen Schritten erledigt:</p>
+
+<ul>
+  <li>Installiere auf einem Rechner <a href="https://ubuntu.com">Ubuntu-Linux</a> (gerne als Server, ist aber eigentlich egal)</li>
+  <li>Führe auf der Kommandozeile <code class="highlighter-rouge">sudo apt-get install docker docker-compose git</code> aus</li>
+  <li>Führe auf der Kommandozeile <code class="highlighter-rouge">git clone http://github.com/philleconnect/ServerContainers/</code> aus.</li>
+  <li>Trage in die <code class="highlighter-rouge">settings.env</code> an den jeweiligen Stellen eigene Passwörter ein.</li>
+  <li>Wechsele in den Ordner <code class="highlighter-rouge">ServerContainers' mit </code>cd ServerContainers’ und führe dort den Befehl <code class="highlighter-rouge">sudo docker-compose up -d</code> aus.</li>
+  <li>Genieße einen Kaffee während du dem Rechner beim Arbeiten zusiehst.</li>
+  <li>Wenn der Kaffee leer ist kannst du auf dem Rechner im Browser auf <code class="highlighter-rouge">http://localhost:84/setup/</code> gehen oder an einem anderen Rechner im gleichen Netzwerk auf <code class="highlighter-rouge">http://&lt;serveradresse&gt;:84/setup/</code>. Die Verbindung zur ipFire kann auch erstmal übersprungen und später eingerichtet werden, so dass nur der persönliche Admin-Zugang vergeben werden muss.</li>
+  <li>Fertig.</li>
+  <li>Die Administrationsoberfläche ist unter <code class="highlighter-rouge">http://&lt;serveradresse&gt;:84/ui/</code> oder per https (selbstsigniertes Zertifikat) unter <code class="highlighter-rouge">https://&lt;serveradresse&gt;:447/ui/</code> zu erreichen.</li>
+</ul>
+
+<h2 id="client">Client</h2>
+
+<p>Dies ist so einfach, dass erst eine Anleitung folgt wenn wir bei der Stable-Version sind.</p>
+
+<p>Einfach den <a href="https://github.com/philleconnect/ClientSetup-Windows/blob/master/Installer/PhilleConnectSetup.exe">Client-Installer Downloaden</a> und auf dem Client-PC ausführen, den Rest erklärt der Installer.</p>
+
+
+  </div>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

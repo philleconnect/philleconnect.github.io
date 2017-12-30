@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+
+	<title>Integrieren</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://philleconnect.org/admin/Integrieren">
+
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorieen:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                    
+                    
+                        
+                        <li>
+                            <a href="/Admin">Admin</a>
+                        </li>
+                           
+                            
+                                <li><a href="/admin/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li><a href="/admin/Wartung" class="subnav">Wartung</a></li>
+                            
+                                
+                            
+                                <li class="active"><a href="/admin/Integrieren" class="subnav">Integrieren</a></li>
+                            
+                                    
+                            
+                                <li><a href="/admin/Faq" class="subnav">FAQ</a></li>
+                            
+                                 
+                    
+                      
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                       
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+  <div role="main" class="main">
+    <a href="#nav" class="nav-toggle">Menu</a>
+    <noscript>
+      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+    </noscript>
+    <!--<h1>Integrieren</h1>-->
+   
+    <h1 id="integrieren-in-den-bestand"><strong>INTEGRIEREN</strong> IN DEN BESTAND</h1>
+
+<p>PhilleConnect kann parallel zu bestehenden Schulnetzwerklösungen betrieben werden, um einen sanften Übergang zur Freiheit zu schaffen ;-)</p>
+
+<p><strong>Grundlegende Kenntnisse im Umgang mit Linux auf der Kommandozeile sind dabei zu empfehlen!</strong></p>
+
+<p>Aus dem vorhandenen System müssen dazu entweder die Benutzerdaten exportiert werden, die dann als CSV-Datei von PhilleConnect eingelesen werden kann (falls vorhanden einschließlich Klartext-Passwörtern), oder die Benutzer werden anhand einer vorhandenen Nutzerliste neu angelegt, erhalten dann natürlich neue Passwörter.</p>
+
+<p>Beim Import können Passworter aus der CSV-Datei übernommen werden, diese können zum Beispiel im Tabellenkalkulationsprogramm erzeugt werden.</p>
+
+<p>Die vorhandenen Laufwerks-Daten können auf dem Server-Rechner in den Ordner <code class="highlighter-rouge">ServerContainers/mount/</code> (vgl. <a href="/admin/Installation">Installation</a>) eingebunden werden. Details dazu liefert zum Beispiel eine Internetsuche mit den Stichworten <code class="highlighter-rouge">mount fstab network</code>.</p>
+
+<p>Bei mir lösen das Problem ein paar Einträge nach dem folgenden Muster in der Datei <code class="highlighter-rouge">/etc/fstab</code> auf dem Server-Rechner:</p>
+
+<p><code class="highlighter-rouge">
+//172.16.0.1/D$/LANiSData/Exchange/School/ /home/serveruser/PhilleConnect/mount/samba/schoolExchange cifs credentials=/root/.smbcredentials,iocharset=utf8,rw,dir_mode=0777,file_mode=0777,user,auto,uid=serveruser 0 0
+</code></p>
+
+<p>wobei in <code class="highlighter-rouge">/root/.smbcredentials</code> noch eine Datei mit etwa diesem Inhalt liegt:</p>
+
+<p><code class="highlighter-rouge">username=MeinFreigabeBenutzername</code></p>
+
+<p><code class="highlighter-rouge">password=MeinServerPasswort</code></p>
+
+<p><code class="highlighter-rouge">domain=MeineSchule.local</code></p>
+
+<p>Sorry, aber genauere Informationen können wir hier leider nicht wirklich geben, da es vom jeweiligen Schulnetz abhängt. Wir hoffen es reicht für die Idee und die wesentlichen Schuchwörter. Für das Hessische System “LANiS” kann es daber direkt zu verwendet werden.</p>
+
+<p>Viel Erfolg!</p>
+
+
+  </div>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

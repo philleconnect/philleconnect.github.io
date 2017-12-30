@@ -20,4 +20,4 @@ Bis auf (mittlerweile weitgehend beseitigte) Bugs ist die Struktur fertig und wi
 ## Die Netzwerk-Struktur
 
 [//]: <> ![image-title-here]({{baseurl}}/assets/images/architecture.png)
-<img src="{{baseurl}}/assets/images/architecture.png" width="100%" />
+<img src="{{baseurl}}/assets/images/architecture.png" width="800px" />

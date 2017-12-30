@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+
+	<title>Wartung</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://philleconnect.org/admin/Wartung">
+
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorieen:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                    
+                    
+                        
+                        <li>
+                            <a href="/Admin">Admin</a>
+                        </li>
+                           
+                            
+                                <li><a href="/admin/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li class="active"><a href="/admin/Wartung" class="subnav">Wartung</a></li>
+                            
+                                
+                            
+                                <li><a href="/admin/Integrieren" class="subnav">Integrieren</a></li>
+                            
+                                    
+                            
+                                <li><a href="/admin/Faq" class="subnav">FAQ</a></li>
+                            
+                                 
+                    
+                      
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                       
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+  <div role="main" class="main">
+    <a href="#nav" class="nav-toggle">Menu</a>
+    <noscript>
+      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+    </noscript>
+    <!--<h1>Wartung</h1>-->
+   
+    <h1 id="wartung"><strong>WARTUNG</strong></h1>
+
+<h2 id="alltag">Alltag</h2>
+
+<p>Die alltäglichen Aufgaben des Admins lassen sich alle bequem von Jedem Rechner im Schulnetz ausführen. Die Weboberfläche kann erreicht werden unter</p>
+
+<p><code class="highlighter-rouge">http://&lt;serveradresse&gt;:84/ui/</code></p>
+
+<p>oder verschlüsselt (mit einem selbst-signierten Zertifikat, muss einmal im Browser bestätigt werden) unter</p>
+
+<p><code class="highlighter-rouge">http://&lt;serveradresse&gt;:447/ui/</code></p>
+
+<h2 id="datensicherung">Datensicherung</h2>
+
+<p>Es müssen nur von drei Orten Backups erstellt werden um das ganze Netzwerksystem nach vollständigem Verlust wieder her zu stellen:</p>
+
+<p>Die Einstellungen in der <code class="highlighter-rouge">settings-yml</code> und gegebenenfalls weitere Anpassungen vor dem Bau der Containerlandschaft.</p>
+
+<p>Nach der Inbetriebnahme sind alle backup-relevanten Serverdaten in dem Verzeichnis</p>
+
+<p><code class="highlighter-rouge">/var/lib/docker/volumes</code></p>
+
+<p>welches regelmäßig und nach wesentlichen Änderungen gesichert werden sollte.</p>
+
+<p>Weiterhin natürlich die Samba-Laufwerke. Bei der Installation findet sich in dem <code class="highlighter-rouge">ServerContainers</code>-Ordner ein Unterordner <code class="highlighter-rouge">mount/</code> der diese in der Standarteinstellung beinhaltet.</p>
+
+<p>Nach einem Totalausfall muss nur</p>
+
+<ul>
+  <li>PhilleConnect neu Installiert werden</li>
+  <li>Der Ordner <code class="highlighter-rouge">/var/lib/docker/volumes</code> wieder durch das Backup ersetzt werden</li>
+  <li>Die Laufwerksdaten wieder an Ort und Stelle gebracht werden.</li>
+</ul>
+
+
+  </div>
+
+    <footer>
+</footer>
+
+
+  </body>
+
+</html>

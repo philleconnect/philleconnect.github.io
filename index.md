@@ -7,7 +7,9 @@ permalink: /index.html
 
 PhilleConnect ist gerade dabei eine moderne, modulare OpenSource Schulnetzwerk-Lösung zu werden.
 
-**DIE STABILE VERSION 1.0 IST VORAUSSICHTLICH ENDE 2017 FERTIG!**
+~~DIE STABILE VERSION 1.0 IST VORAUSSICHTLICH ENDE 2017 FERTIG!~~
+
+**FAST FERTIG: DIE BUGS SIND RAUS, ES FEHLT NUR NOCH EIN BISSCHEN DOKUMENTATION HIER (STAND:31.12.2017)**
 
 Das Projekt befindet sich gerade (November 2017) in sehr aktiver Entwicklung, im [GitHub-Repository](https://github.com/philleconnect/) finden sich Beta-Versionen von Server und Client. Bitte beachten sie die aktuell noch vorhandenen [Bugs](https://github.com/philleconnect/ServerContainers/issues)!
 

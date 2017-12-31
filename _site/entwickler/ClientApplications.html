@@ -5,11 +5,11 @@
 	<meta charset="utf-8">
 
 	<title>ClientApplications</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/preloader.css">
 	<link rel="canonical" href="http://philleconnect.org/entwickler/ClientApplications">
-	<script src="/js/responsive-nav.js"></script>
+	<script src="/js/responsive-nav.min.js"></script>
 
 </head>
 
@@ -89,12 +89,12 @@
 
 
 
-  <div role="main" class="main">
-    <a href="#nav" class="nav-toggle">Menu</a>
-    <noscript>
-      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
-    </noscript>
-    <!--<h1>ClientApplications</h1>-->
+    <div role="main" class="main">
+      <a href="#nav" class="nav-toggle nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">Menu</a>
+      <noscript>
+        <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+      </noscript>
+      <!--<h1>ClientApplications</h1>-->
    
     <h1 id="clientapplications"><strong>CLIENT</strong>APPLICATIONs</h1>
 
@@ -134,7 +134,7 @@
 
 
 
-  </div>
+    </div>
 
     <footer>
 </footer>
@@ -142,17 +142,6 @@
 
     <script>
         var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
-        var table_Props = {
-            col_3: "select",
-            col_6: "select",
-            col_7: "none",
-            display_all_text: "Alle anzeigen",
-            sort_select: true
-        };
-        var tf2 = setFilterGrid("users", table_Props);
-        function workOnUser(username) {
-            window.location.href = "changeaccount.php?user="+username;
-        }
     </script>
 
   </body>

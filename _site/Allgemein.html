@@ -7,7 +7,9 @@
 	<title>Allgemein</title>
 
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/preloader.css">
 	<link rel="canonical" href="http://philleconnect.org/Allgemein">
+	<script src="/js/responsive-nav.js"></script>
 
 </head>
 
@@ -16,7 +18,7 @@
 
     <header></header>
 <aside>
-    <div role="navigation" id="foo" class="nav-collapse">
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
         <div class="top">
             <a href="/index">
                 <img src="/assets/images/logo.png">
@@ -79,7 +81,7 @@
 
 <h2 id="philosophie">Philosophie</h2>
 
-<h3 id="foss-freie-software-in-kleinen-modulen"><a href="https://de.wikipedia.org/wiki/Free/Libre_Open_Source_Software" target="_blank">FOSS</a>: Freie Software in kleinen Modulen</h3>
+<h3 id="fosshttpsdewikipediaorgwikifreelibreopensourcesoftwaretargetblank-freie-software-in-kleinen-modulen"><a href="https://de.wikipedia.org/wiki/Free/Libre_Open_Source_Software" target="_blank">FOSS</a>: Freie Software in kleinen Modulen</h3>
 
 <p>Wir sind der Ansicht, dass ein Schulnetzwerk-System als freie Software bereitstehen muss.</p>
 
@@ -91,7 +93,7 @@
 
 <p>Daher auch:</p>
 
-<h3 id="kiss-Übersichtlich-einfach-und-nur-das-nötige"><a href="https://de.wikipedia.org/wiki/KISS-Prinzip" target="_blank">KISS</a>: Übersichtlich, einfach und nur das Nötige</h3>
+<h3 id="kisshttpsdewikipediaorgwikikiss-prinziptargetblank-bersichtlich-einfach-und-nur-das-ntige"><a href="https://de.wikipedia.org/wiki/KISS-Prinzip" target="_blank">KISS</a>: Übersichtlich, einfach und nur das Nötige</h3>
 
 <p>Anwender von Schulnetzwerken sind Schüler und Lehrer, die nicht die Zeit und Arbeit aufbringen können, um sich in ein komplexes System einzudenken. Zu viele Features oder unerwartetes Verhalten schrecken eher ab, das Ergebnis ist weniger, statt mehr Kompetenz im Umgang mit digitalen Medien.</p>
 
@@ -101,7 +103,7 @@
 
 <p>Für allgemeine Aufgaben der IT-Verwaltung wie Softwareverteilung gibt es allgemeine Werkzeuge, dies ist keine Aufgabe eines pädagogischen Netzwerk. Sie können allenfalls eine optionale Komponente darstellen.</p>
 
-<h3 id="sicherheit-schütze-das-schützenswerte-eine-schule-ist-aber-ein-pädagogischer-ort-kein-gefängnis">Sicherheit: Schütze das Schützenswerte, eine Schule ist aber ein pädagogischer Ort, kein Gefängnis</h3>
+<h3 id="sicherheit-schtze-das-schtzenswerte-eine-schule-ist-aber-ein-pdagogischer-ort-kein-gefngnis">Sicherheit: Schütze das Schützenswerte, eine Schule ist aber ein pädagogischer Ort, kein Gefängnis</h3>
 
 <p>Die Heimat von PhilleConnect ist die Schule von <a href="https://de.wikipedia.org/wiki/Wau_Holland" target="_blank">Wau Holland</a>. Wir sind uns sicher: Von seinem Vorbild können wir viel lernen.</p>
 
@@ -118,11 +120,27 @@
 <p>Nur wer in padagogisch unterstützter Freiheit verantwortungsvoll Grenzen ausloten darf, und dabei durch Pädagogen zu ethischem und sozialem Handeln angeleitet, und nicht durch technische Sperren eingeschränkt und angestachelt wird, kann sich zu einem mündigen Mitglied in unserer Welt der beschleunigt wachsenden Datenverarbeitung entwickeln.</p>
 
 
+
   </div>
 
     <footer>
 </footer>
 
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+        var table_Props = {
+            col_3: "select",
+            col_6: "select",
+            col_7: "none",
+            display_all_text: "Alle anzeigen",
+            sort_select: true
+        };
+        var tf2 = setFilterGrid("users", table_Props);
+        function workOnUser(username) {
+            window.location.href = "changeaccount.php?user="+username;
+        }
+    </script>
 
   </body>
 

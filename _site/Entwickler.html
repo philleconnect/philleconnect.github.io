@@ -7,7 +7,9 @@
 	<title>Entwickler</title>
 
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/preloader.css">
 	<link rel="canonical" href="http://philleconnect.org/Entwickler">
+	<script src="/js/responsive-nav.js"></script>
 
 </head>
 
@@ -16,7 +18,7 @@
 
     <header></header>
 <aside>
-    <div role="navigation" id="foo" class="nav-collapse">
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
         <div class="top">
             <a href="/index">
                 <img src="/assets/images/logo.png">
@@ -57,9 +59,9 @@
                             <li><a href="/entwickler/DockerContainers" class="subnav">DockerContainers</a></li>
                             
                             <li><a href="/_pages/entwickler/07_docker-for-newbies.html" class="subnav">DockerForNewbies</a></li>
-                            
+                          
                             <li><a href="/entwickler/Faq" class="subnav">FAQ</a></li>
-                                   
+                                     
                     
                           
                     
@@ -106,11 +108,27 @@
 <p><a href="https://github.com/philleconnect"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" /></a></p>
 
 
+
   </div>
 
     <footer>
 </footer>
 
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+        var table_Props = {
+            col_3: "select",
+            col_6: "select",
+            col_7: "none",
+            display_all_text: "Alle anzeigen",
+            sort_select: true
+        };
+        var tf2 = setFilterGrid("users", table_Props);
+        function workOnUser(username) {
+            window.location.href = "changeaccount.php?user="+username;
+        }
+    </script>
 
   </body>
 

@@ -7,7 +7,9 @@
 	<title>FAQ</title>
 
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/preloader.css">
 	<link rel="canonical" href="http://philleconnect.org/admin/Faq">
+	<script src="/js/responsive-nav.js"></script>
 
 </head>
 
@@ -16,7 +18,7 @@
 
     <header></header>
 <aside>
-    <div role="navigation" id="foo" class="nav-collapse">
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
         <div class="top">
             <a href="/index">
                 <img src="/assets/images/logo.png">
@@ -92,13 +94,13 @@
    
     <h1 id="fragenantworten"><strong>FRAGEN</strong>ANTWORTEN</h1>
 
-<h3 id="muss-ich-als-admin-docker-können">Muss ich als Admin Docker können?</h3>
+<h3 id="muss-ich-als-admin-docker-knnen">Muss ich als Admin Docker können?</h3>
 <p>Nein.</p>
 
 <h3 id="kann-ich-eigene-dienste-mit-dem-integrierten-ldap-authentifizieren">Kann ich eigene Dienste mit dem integrierten LDAP authentifizieren?</h3>
 <p>Ja. Dazu muss in der <code class="highlighter-rouge">docker-compose.yml</code> der LDAP-Port freigegeben werden. Vielleicht finden sich in der <a href="/entwickler">EntwicklerEcke</a> ja noch passende erweiterte Information.</p>
 
-<h3 id="können-ich-und-meine-kollegen-oder-auch-die-schüler-mit-eigenen-geräten-philleconnect-nutzen">Können ich und meine Kollegen, oder auch die Schüler, mit eigenen Geräten PhilleConnect nutzen?</h3>
+<h3 id="knnen-ich-und-meine-kollegen-oder-auch-die-schler-mit-eigenen-gerten-philleconnect-nutzen">Können ich und meine Kollegen, oder auch die Schüler, mit eigenen Geräten PhilleConnect nutzen?</h3>
 
 <p>Ja, der Samba-Server kann z.B. von jedem Windows-Gerät durch Eingabe von <code class="highlighter-rouge">\\&lt;ip-oder-hostname-des-servers&gt;\</code> im Explorer erreicht werden, von Linux-Geräten oft durch Eingabe von z.B. <code class="highlighter-rouge">smb://&lt;ip-oder-hostname-des-servers&gt;/</code>.</p>
 
@@ -115,7 +117,7 @@
 
 <p>Sollte jemand eine freie Lösung zum Beispiel als Docker-Container <a href="/entwickler">entwickeln</a> nehmen wir diese gerne als optionalen Container mit auf.</p>
 
-<h3 id="beinhaltet-philleconnect-eine-imaging-lösung-um-fertige-installationen-auf-mehreren-rechnern-zu-verteilen">Beinhaltet PhilleConnect eine Imaging-Lösung um fertige Installationen auf mehreren Rechnern zu verteilen.</h3>
+<h3 id="beinhaltet-philleconnect-eine-imaging-lsung-um-fertige-installationen-auf-mehreren-rechnern-zu-verteilen">Beinhaltet PhilleConnect eine Imaging-Lösung um fertige Installationen auf mehreren Rechnern zu verteilen.</h3>
 <p>Nein.</p>
 
 <p>Siehe auch oben.</p>
@@ -129,7 +131,7 @@
 
 <p>Auch wenn speziell TimeForKids an sich auf ipFire basiert ist diese Lösung nicht mehr frei genug um unsere Internetsperre dort einzusetzen. (Merke: Benutze nur freie Software! ;-) Wer doch eine Möglichkeit findet - gerne berichten!</p>
 
-<h3 id="beinhaltet-philleconnect-einen-festplattenschutz-wie-er-in-vielen-schulen-die-pcs-vor-veränderung-und-manipulation-schützt">Beinhaltet PhilleConnect einen Festplattenschutz, wie er in vielen Schulen die PCs vor Veränderung und Manipulation schützt?</h3>
+<h3 id="beinhaltet-philleconnect-einen-festplattenschutz-wie-er-in-vielen-schulen-die-pcs-vor-vernderung-und-manipulation-schtzt">Beinhaltet PhilleConnect einen Festplattenschutz, wie er in vielen Schulen die PCs vor Veränderung und Manipulation schützt?</h3>
 
 <p>Leider nein.</p>
 
@@ -153,7 +155,7 @@
 
 <p>Neue Ideen sind herzlich willkommen!</p>
 
-<h3 id="was-ist-mit-der-ebenfalls-freien-lösung-linuxmusternet-">Was ist mit der ebenfalls freien Lösung <a href="https://linuxmuster.net">LinuxMuster.net</a> ?</h3>
+<h3 id="was-ist-mit-der-ebenfalls-freien-lsung-linuxmusternethttpslinuxmusternet-">Was ist mit der ebenfalls freien Lösung <a href="https://linuxmuster.net">LinuxMuster.net</a> ?</h3>
 
 <p>Sorry, liebe LinuxMuster, aber uns ist es zu umfangreich, zu unverständlich und nicht modular genug. Es fehlt uns die Flexibilität und der problemlose Übergang der bestehenden Lösung. Fertige Systemimages bleiben ein Stück weit Magie.</p>
 
@@ -164,11 +166,27 @@
 <p>Wir sind aber Stolz auf das was uns auszeichnet: schlank, modular, anpasspar, erweiterbar, verständlich. Hackable.</p>
 
 
+
   </div>
 
     <footer>
 </footer>
 
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+        var table_Props = {
+            col_3: "select",
+            col_6: "select",
+            col_7: "none",
+            display_all_text: "Alle anzeigen",
+            sort_select: true
+        };
+        var tf2 = setFilterGrid("users", table_Props);
+        function workOnUser(username) {
+            window.location.href = "changeaccount.php?user="+username;
+        }
+    </script>
 
   </body>
 

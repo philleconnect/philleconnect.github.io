@@ -7,7 +7,9 @@
 	<title>Screenshots</title>
 
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/preloader.css">
 	<link rel="canonical" href="http://philleconnect.org/allgemein/Screenshots">
+	<script src="/js/responsive-nav.js"></script>
 
 </head>
 
@@ -16,7 +18,7 @@
 
     <header></header>
 <aside>
-    <div role="navigation" id="foo" class="nav-collapse">
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
         <div class="top">
             <a href="/index">
                 <img src="/assets/images/logo.png">
@@ -105,11 +107,27 @@
 <p>Welche Laufwerke nach der Anmeldung eingebunden werden kann durch den Admin konfiguriert werden.</p>
 
 
+
   </div>
 
     <footer>
 </footer>
 
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+        var table_Props = {
+            col_3: "select",
+            col_6: "select",
+            col_7: "none",
+            display_all_text: "Alle anzeigen",
+            sort_select: true
+        };
+        var tf2 = setFilterGrid("users", table_Props);
+        function workOnUser(username) {
+            window.location.href = "changeaccount.php?user="+username;
+        }
+    </script>
 
   </body>
 

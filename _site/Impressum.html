@@ -7,7 +7,9 @@
 	<title>Impressum</title>
 
 	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/preloader.css">
 	<link rel="canonical" href="http://philleconnect.org/Impressum">
+	<script src="/js/responsive-nav.js"></script>
 
 </head>
 
@@ -16,7 +18,7 @@
 
     <header></header>
 <aside>
-    <div role="navigation" id="foo" class="nav-collapse">
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
         <div class="top">
             <a href="/index">
                 <img src="/assets/images/logo.png">
@@ -91,13 +93,13 @@
 
 <h2 id="disclaimer">Disclaimer</h2>
 
-<h3 id="haftung-für-inhalte">Haftung für Inhalte</h3>
+<h3 id="haftung-fr-inhalte">Haftung für Inhalte</h3>
 
 <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
 
 <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
 
-<h3 id="haftung-für-links">Haftung für Links</h3>
+<h3 id="haftung-fr-links">Haftung für Links</h3>
 
 <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.</p>
 
@@ -112,11 +114,27 @@
 <p><em>Quellverweis:</em> <a href="https://www.e-Recht24.de">eRecht24</a></p>
 
 
+
   </div>
 
     <footer>
 </footer>
 
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+        var table_Props = {
+            col_3: "select",
+            col_6: "select",
+            col_7: "none",
+            display_all_text: "Alle anzeigen",
+            sort_select: true
+        };
+        var tf2 = setFilterGrid("users", table_Props);
+        function workOnUser(username) {
+            window.location.href = "changeaccount.php?user="+username;
+        }
+    </script>
 
   </body>
 

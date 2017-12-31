@@ -7,29 +7,18 @@
 
     {% include header.html %}
 
-  <div role="main" class="main">
-    <a href="#nav" class="nav-toggle">Menu</a>
-    <noscript>
-      <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
-    </noscript>
-    {{ content }}
-  </div>
+    <div role="main" class="main">
+      <a href="#nav" class="nav-toggle">Menu</a>
+      <noscript>
+        <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+      </noscript>
+      {{ content }}
+    </div>
 
     {% include footer.html %}
 
     <script>
         var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
-        var table_Props = {
-            col_3: "select",
-            col_6: "select",
-            col_7: "none",
-            display_all_text: "Alle anzeigen",
-            sort_select: true
-        };
-        var tf2 = setFilterGrid("users", table_Props);
-        function workOnUser(username) {
-            window.location.href = "changeaccount.php?user="+username;
-        }
     </script>
 
   </body>

@@ -18,9 +18,9 @@ include: ['_pages']
 markdown: kramdown
 # Syntax highlighting
 highlighter: rouge
-kramdown:
-    input: GFM 
-    syntax_highlighter: rouge
+#kramdown:
+#    input: GFM 
+#    syntax_highlighter: rouge
 
 # GitHub default (can be set to custom stuff)
 #github: [metadata]

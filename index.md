@@ -5,21 +5,39 @@ permalink: /index.html
 
 # **PHILLE**CONNECT
 
-PhilleConnect ist gerade dabei eine moderne, modulare OpenSource Schulnetzwerk-Lösung zu werden.
+## Die Next-Generation Schul-IT: PhilleConnect ist eine moderne, modulare und anpassbare OpenSource Schulnetzwerk-Lösung
 
-~~DIE STABILE VERSION 1.0 IST VORAUSSICHTLICH ENDE 2017 FERTIG!~~
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/architecture.png" width="800px" /></div>
+        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenControl.png" width="800px" /></div>
+        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenAdminProfil2.png" width="800px" /></div>
+        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenVolumes.png" width="800px" /></div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+ 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+ 
+</div>
 
-**FAST FERTIG: DIE BUGS SIND RAUS, ES FEHLT NUR NOCH EIN BISSCHEN DOKUMENTATION HIER (STAND:31.12.2017)**
+**Fast da: PhilleConnect wird nächste Woche (KW 2 2018) als Stable Version veröffentlicht!** (Stand: 5.1.2018)
 
-Das Projekt befindet sich gerade (November 2017) in sehr aktiver Entwicklung, im [GitHub-Repository](https://github.com/philleconnect/) finden sich Beta-Versionen von Server und Client. Bitte beachten sie die aktuell noch vorhandenen [Bugs](https://github.com/philleconnect/ServerContainers/issues)!
+Und so sieht's aus: [Screenshots](/allgemein/Screenshots)!
 
-Eine gute Vorstellung was da kommt geben aber schon mal die [Screenshots](/allgemeines/screenshots)!
+Zum [installieren](/admin/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server)-System:
+* Auf der Kommandozeile `sudo apt-get install docker docker-compose git` ausführen
+* dann mit `git clone http://github.com/philleconnect/ServerContainers/` PhilleConnect docker-Anweisungen holen
+* mit `cd ServerContainers` in den passenden Ordner wechseln und bedarfsweise in der Datei `settings.env` eigene Passwörter vergeben
+* und mit `sudo docker-compose up -d` die Server-Container starten
 
-Bis auf (mittlerweile weitgehend beseitigte) Bugs ist die Struktur fertig und wird bereits in unserer Schule im Produktivbetrieb eingesetzt.
+Fertig ist der Server, der unter `http://localhost:84/setup/` mit einem Zugangspasswort versehen werden kann. Dort findet sich auch ein Link zum [Download des Client-Installers](https://github.com/philleconnect/ClientSetup-Windows/releases/download/1.0.2/PhilleConnectSetup.exe).
 
-**PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, frei. Hackable.
 
-## Die Netzwerk-Struktur
 
-[//]: <> ![image-title-here]({{baseurl}}/assets/images/architecture.png)
-<img src="{{baseurl}}/assets/images/architecture.png" width="800px" />
+## **PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, frei. Hackable.

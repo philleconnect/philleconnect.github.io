@@ -1,0 +1,27 @@
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+ul {
+    line-height: 1.5;
+}
+
+
+code.highlighter-rouge {
+  background-color: #49483E;
+  border: 1px solid #ccc;
+  padding: 3px;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+
+.swiper-container {
+    width: 800px;
+    height: 630px;
+}
+ 

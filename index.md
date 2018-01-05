@@ -15,7 +15,7 @@ permalink: /index.html
         <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenControl.png" width="800px" /></div>
         <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenAdminProfil2.png" width="800px" /></div>
         <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenVolumes.png" width="800px" /></div>
-        ...
+        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenAdminWin10.png" width="800px" /></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -26,7 +26,9 @@ permalink: /index.html
  
 </div>
 
-**Fast da: PhilleConnect wird nächste Woche (KW 2 2018) als Stable Version veröffentlicht!** (Stand: 5.1.2018)
+### **Fertig: PhilleConnect ist ab sofort als Stable Version v1.0.0 verfügbar!** (5.1.2018)
+
+(Diese Webseite hingegen ist noch im Beta-Statium, die Dokumentation wird in den nächsten Tagen noch vervollständigt!)
 
 Und so sieht's aus: [Screenshots](/allgemein/Screenshots)!
 
@@ -38,4 +40,4 @@ Zum [installieren](/admin/Installation) auf einem [Ubuntu](https://www.ubuntu.co
 
 Fertig ist die Serverlandschaft mit LDAP, Samba und PhilleConnect-Adminoberfläche, die unter `http://localhost:84/setup/` konfiguriert und mit einem Zugangspasswort versehen werden kann. Dort findet sich auch ein Link zum [Download des Client-Installers](https://github.com/philleconnect/ClientSetup-Windows/releases/download/1.0.2/PhilleConnectSetup.exe).
 
-## **PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, frei. Hackable.
+## **PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, Systemübergreifend, frei. Hackable.

@@ -15,7 +15,6 @@ Nein.
 Ja. Dazu muss in der `docker-compose.yml` der LDAP-Port freigegeben werden. Vielleicht finden sich in der [EntwicklerEcke](/entwickler) ja noch passende erweiterte Information.
 
 ### Können ich und meine Kollegen, oder auch die Schüler, mit eigenen Geräten PhilleConnect nutzen?
-
 Ja, der Samba-Server kann z.B. von jedem Windows-Gerät durch Eingabe von `\\<ip-oder-hostname-des-servers>\` im Explorer erreicht werden, von Linux-Geräten oft durch Eingabe von z.B. `smb://<ip-oder-hostname-des-servers>/`.
 
 Dinge wie die Monitorkontrolle funktionieren natürlich nicht ohne installierten VNC-Dienst.

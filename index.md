@@ -36,8 +36,6 @@ Zum [installieren](/admin/Installation) auf einem [Ubuntu](https://www.ubuntu.co
 * mit `cd ServerContainers` in den passenden Ordner wechseln und bedarfsweise in der Datei `settings.env` eigene Passwörter vergeben
 * und mit `sudo docker-compose up -d` die Server-Container starten
 
-Fertig ist der Server, der unter `http://localhost:84/setup/` mit einem Zugangspasswort versehen werden kann. Dort findet sich auch ein Link zum [Download des Client-Installers](https://github.com/philleconnect/ClientSetup-Windows/releases/download/1.0.2/PhilleConnectSetup.exe).
-
-
+Fertig ist die Serverlandschaft mit LDAP, Samba und PhilleConnect-Adminoberfläche, die unter `http://localhost:84/setup/` konfiguriert und mit einem Zugangspasswort versehen werden kann. Dort findet sich auch ein Link zum [Download des Client-Installers](https://github.com/philleconnect/ClientSetup-Windows/releases/download/1.0.2/PhilleConnectSetup.exe).
 
 ## **PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, frei. Hackable.

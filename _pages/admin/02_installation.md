@@ -27,3 +27,5 @@ Die Installation des Servers ist in wenigen Schritten erledigt:
 Dies ist so einfach, dass erst eine Anleitung folgt wenn wir bei der Stable-Version sind.
 
 Einfach den [Client-Installer Downloaden](https://github.com/philleconnect/ClientSetup-Windows/blob/master/Installer/PhilleConnectSetup.exe) und auf dem Client-PC ausführen, den Rest erklärt der Installer.
+
+Nicht vergessen: Dem Client nach der Registrierung am Server ein Konfigurationsprofil über die Admin-Oberfläche zuweisen!

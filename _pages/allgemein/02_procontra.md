@@ -21,6 +21,7 @@ Ein kurzer Leistungsüberblick in Stichpunkten aus unserer Sicht
 * Modular
 * selbst erweiterbar
 * Standardkonform: LDAP, Samba, ...
+* Docker: Server-as-Code anstelle von Images
 * Einfache, trotzdem mächtige Laufwerksverwaltung
 * Monitorkontrolle und -sperre
 * Internetsperre (in Kombination mit einem ipFire-Router)

@@ -15,7 +15,7 @@ permalink: /index.html
         <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenControl.png" width="800px" /></div>
         <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenAdminProfil2.png" width="800px" /></div>
         <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenVolumes.png" width="800px" /></div>
-        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenAdminWin10.png" width="800px" /></div>
+        <div class="swiper-slide"><img src="{{baseurl}}/assets/images/ScreenTeacherWin10.png" width="800px" /></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>

@@ -44,6 +44,12 @@ Höchst wahrscheinlich liegt ein Konfigurations- oder Netzwerkfehler vor, der ni
 
 Prüfen Sie dann ob der Rechner eine korrekte IP-Adresse zugewiesen bekommt und er den Server erreichen kann.
 
+### Ich habe etwas bei der Konfiguration falsch gemacht, wie kann ich die Container samt der Installation wieder löschen?
+
+Wenn die `./dev/cleanup.sh` ausführen wird jede Konfiguration samt Datenbanken, LDAP etc. gelöscht.
+
+Führen Sie dies niemals für ein bereits laufendes System aus, da alle Daten unwiederbringlich verloren gehen!
+
 ### Fehlt ein Fehler?
 
 Schreiben Sie uns was fehlt in einer aussagekräftigen eMail an `it [ät] polarwinkel [punkt] de` !

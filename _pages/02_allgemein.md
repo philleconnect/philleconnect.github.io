@@ -18,7 +18,7 @@ In Schulen und den Medienzentren sind nicht nur die einzigen Experten, die wirkl
 
 Also: Packen wir es an! Warum sollten bei diesen Voraussetzungen andere das System entwickeln? Vielmehr gilt es die reichlich vorhandene Expertise in einem Projekt zu vereinen, so dass viele an dem gleichen Strang ziehen, anstatt dass jeder sein eigenes Rad neu erfindet.
 
-Da dabei die Hauptaufgabe der IT-Beauftragten freilich der Unterricht ist, muss das Gesamtsystem aus einzelnen, unabhängig von einander zu entwickelnden Komponenten bestehen. Ohne übermäßige Einarbeitung muss ein Modul verstehbar und veränderbar sein.
+Da die Hauptaufgabe der IT-Beauftragten der Unterricht ist, muss das Gesamtsystem aus einzelnen, unabhängig von einander zu entwickelnden Komponenten bestehen. Ohne übermäßige Einarbeitung muss ein Modul verstehbar und veränderbar sein.
 
 Daher auch:
 
@@ -30,9 +30,9 @@ Ganz im Sinne der didaktischen Reduktion darf das Produkt nicht im Weg stehen, s
 
 Daher sind nur die für die pädagogische Arbeit nötigen Features wie Monitorkontrolle, Speicherverwaltung und Internetkontrolle eingebaut.
 
-Für allgemeine Aufgaben der IT-Verwaltung wie Softwareverteilung gibt es allgemeine Werkzeuge, dies ist keine Aufgabe eines pädagogischen Netzwerk. Sie können allenfalls eine optionale Komponente darstellen.
+Für allgemeine Aufgaben der IT-Verwaltung wie Softwareverteilung gibt es allgemeine Werkzeuge, dies ist keine Aufgabe eines pädagogischen Netzwerkes. Sie können allenfalls eine optionale Komponente darstellen.
 
-### Sicherheit: Schütze das Schützenswerte, eine Schule ist aber ein pädagogischer Ort, kein Gefängnis
+### Sicherheit: Schütze das schützenswerte, eine Schule ist aber ein pädagogischer Ort, kein Gefängnis
 
 Die Heimat von PhilleConnect ist die Schule von [Wau Holland](https://de.wikipedia.org/wiki/Wau_Holland){:target="_blank"}. Wir sind uns sicher: Von seinem Vorbild können wir viel lernen.
 
@@ -40,10 +40,11 @@ Passwörter werden verschlüsselt - keine Frage. Auch die von Schülern. Sie dü
 
 Schutz gegen Manipulation oder "kreativer Nutzung" ist jedoch *keine* Frage der Sicherheit.
 
-Dem natürlichen Spieldrang von SchülerInnen sollte Rechnung getragen werden, all zu leicht sollte sich der Unterricht nicht stören lassen, insbesondere auch um weniger versierten KollegInnen eine motivierende Arbeit an PC zu ermöglichen.
+Dem natürlichen Spieldrang von SchülerInnen sollte Rechnung getragen werden, all zu leicht sollte sich der Unterricht nicht stören lassen, insbesondere auch um weniger versierten KollegInnen eine motivierende Arbeit am PC zu ermöglichen.
 
-Ein beliebiger Schutz vor Manipulation ist jedoch weder möglich noch zielführend. Offensive Störungen sind Gelegenheiten für padagogisches Wirken! So ist es ohnehin nicht möglich, SchülerInnen davon ab zu halten Tasten zu vertauschen, sehr versierte Schüer schaffen es sicher auch Dinge wie den VNC-Dienst zu blockieren. Oder den Unterricht einfach durch quatschen zu stören. Eine pädagogische Chance in einer freien Welt!
+Ein beliebiger Schutz vor Manipulation ist jedoch weder möglich noch zielführend. Offensive Störungen sind Gelegenheiten für padagogisches Wirken! So ist es ohnehin nicht möglich, SchülerInnen davon abzuhalten Tasten zu vertauschen, sehr versierte Schüler schaffen es sicherlich auch, Dinge wie den VNC-Dienst zu blockieren. Oder den Unterricht einfach durch quatschen zu stören. Eine pädagogische Chance in einer freien Welt!
 
 Oder schließen Sie in Ihrer Schule die Tafeln nach dem Unterricht ab, damit keine SchülerInnen Herzchen oder Penisse daran malen?
 
-Nur wer in padagogisch unterstützter Freiheit verantwortungsvoll Grenzen ausloten darf, und dabei durch Pädagogen zu ethischem und sozialem Handeln angeleitet, und nicht durch technische Sperren eingeschränkt und angestachelt wird, kann sich zu einem mündigen Mitglied in unserer Welt der beschleunigt wachsenden Datenverarbeitung entwickeln.
+Nur wer in padagogisch unterstützter Freiheit verantwortungsvoll Grenzen ausloten darf, und dabei durch Pädagogen zu ethischem und sozialem Handeln angeleitet, und nicht durch technische Sperren eingeschränkt wird, kann sich zu einem mündigen Mitglied in unserer Welt der beschleunigt wachsenden Datenverarbeitung entwickeln.
+

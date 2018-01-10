@@ -30,7 +30,7 @@ permalink: /index.html
 
 Und so sieht's aus: [Screenshots](/allgemein/Screenshots)!
 
-Kurzanleitung zur [Installation](/admin/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server)-System:
+Kurzanleitung zur [Installation](/admins/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server){:target="_blank"}-System:
 * Auf der Kommandozeile `sudo apt-get install docker docker-compose git` ausführen
 * dann mit `git clone http://github.com/philleconnect/ServerContainers/` PhilleConnect docker-Anweisungen holen
 * mit `cd ServerContainers` in den passenden Ordner wechseln und bedarfsweise in der Datei `settings.env` eigene Passwörter vergeben
@@ -38,4 +38,4 @@ Kurzanleitung zur [Installation](/admin/Installation) auf einem [Ubuntu](https:/
 
 Fertig ist die Serverlandschaft mit LDAP, Samba und PhilleConnect-Adminoberfläche, die unter `http://localhost:84/setup/` konfiguriert und mit einem Zugangspasswort versehen werden kann. Dort findet sich auch ein Link zum [Download des Client-Installers](https://github.com/philleconnect/ClientSetup-Windows/releases/download/1.0.2/PhilleConnectSetup.exe).
 
-## **PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, Systemübergreifend, frei. Hackable.
+## **PHILLE**CONNECT: Schlank, modular, anpassbar, erweiterbar, verständlich, nützlich, fortschrittlich, systemübergreifend, frei. Hackable.

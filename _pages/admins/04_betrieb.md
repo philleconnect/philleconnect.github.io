@@ -20,9 +20,9 @@ oder verschlüsselt (mit einem selbst-signierten Zertifikat, muss einmal im Brow
 
 ## Datensicherung
 
-Es müssen nur von drei Orten Backups erstellt werden um das ganze Netzwerksystem nach vollständigem Verlust wieder her zu stellen:
+Es müssen nur von drei Orten Backups erstellt werden um das ganze Netzwerksystem nach vollständigem Verlust wieder herzustellen:
 
-1. Die Einstellungen in der `settings-yml` und gegebenenfalls weitere Anpassungen vor dem Bau der Containerlandschaft.
+1. Die Einstellungen in der `settings.yml`
 
 2. Nach der Inbetriebnahme sind alle backup-relevanten Serverdaten (LDAP-Datenbank, PC-Datenbank, ...) in dem Verzeichnis
     
@@ -38,8 +38,8 @@ Es müssen nur von drei Orten Backups erstellt werden um das ganze Netzwerksyste
 
 muss nur
 
-1. PhilleConnect neu Installiert werden und die Einstellungen aus der `settings.env`-Datei übernommen werden,
-2. der Ordner `/var/lib/docker/volumes` wieder durch das Backup ersetzt werden
+1. PhilleConnect neu installiert und die Einstellungen aus der `settings.env`-Datei übernommen werden,
+2. der Ordner `/var/lib/docker/volumes` wieder durch das Backup ersetzt
 3. und die Laufwerksdaten wieder an Ort und Stelle gebracht werden.
 
 ## Update
@@ -47,8 +47,8 @@ muss nur
 Um den Server auf die neueste stabile Version zu updaten müssen auf der Kommandozeile in dem Ordner `ServerContainers`
 
 1. mit `sudo docker-compose down` die Server-Container angehalten werden
-2. mit `git pull` die aktuellsten "Container-Baupläne geholt werden und schließlich
-3. mit `sudo docker-compose up -d --build` die Server-Container neu erstellt und gestartet werden. (was viel schneller geht als bei der ersten Installation!)
+2. mit `git pull` die aktuellsten "Container-Baupläne" geholt werden und schließlich
+3. mit `sudo docker-compose up -d --build` die Server-Container neu erstellt und gestartet werden. (was viel schneller geht als bei der ersten Installation)
 
 ## Server stoppen und starten
 

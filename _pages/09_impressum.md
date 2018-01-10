@@ -10,7 +10,7 @@ lang: de
 
 Diese Webpräsenz verfolgt keine kommerziellen Interessen.
 
-## Ansprechpartner & Verantwortlich:
+## Ansprechpartner & verantwortlich:
 
 Dirk Winkel
 

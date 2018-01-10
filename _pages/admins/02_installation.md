@@ -10,22 +10,58 @@ lang: de
 
 ## Server
 
-Die Installation des Servers ist in wenigen Schritten erledigt:
+Die Installation des Servers im Detail. Für ein Testsystem können auch einzelne Punkte übersprungen werden.
 
-* Installiere auf einem Rechner [Ubuntu-Linux](https://ubuntu.com) (gerne als Server, ist aber eigentlich egal)
-* Führe auf der Kommandozeile `sudo apt-get install docker docker-compose git` aus
-* Führe auf der Kommandozeile `git clone http://github.com/philleconnect/ServerContainers/` aus.
-* Trage in die `settings.env` an den jeweiligen Stellen eigene Passwörter ein.
-* Wechsele in den Ordner `ServerContainers` mit `cd ServerContainers` und führe dort den Befehl `sudo docker-compose up -d` aus.
-* Genieße einen Kaffee während du dem Rechner beim Arbeiten zusiehst.
-* Wenn der Kaffee leer ist kannst du auf dem Rechner im Browser auf `http://localhost:84/setup/` gehen oder an einem anderen Rechner im gleichen Netzwerk auf `http://<serveradresse>:84/setup/`. Die Verbindung zur ipFire kann auch erstmal übersprungen und später eingerichtet werden, so dass nur der persönliche Admin-Zugang vergeben werden muss.
-* Fertig.
-* Die Administrationsoberfläche ist unter `http://<serveradresse>:84/ui/` oder per https (selbstsigniertes Zertifikat) unter `https://<serveradresse>:447/ui/` zu erreichen.
+1. Installiere auf dem Server **[Ubuntu-Linux](https://ubuntu.com)** (gerne als Server, ist aber eigentlich egal).
+    
+    Nur für Profis: Dies kann auch in einer Virtuellen Maschiene z.B. auf einem [Proxmoxx](https://www.proxmox.com){:target="_blank"}-Server geschehen, nur nich in einem Linux-Container.
+    
+1. Sorge dafür, dass dieser Rechner **immer die gleiche IP-Adresse** bekommt 
+    1. z.B. im Router entsprechend einrichten 
+    2. oder eine Statische IP-Adresse vergeben
+1. Führe auf der Kommandozeile `sudo apt-get update && sudo apt-get install docker docker-compose git` aus.
+1. Führe auf der Kommandozeile `git clone http://github.com/philleconnect/ServerContainers/` aus.
+1. Trage in die `settings.env` (mit Texteditor bearbeiten) mindestens in den ersten beiden Optionen eigene Passwörter ein und unter der dritten Option die dauerhafte IP-Adresse des Servers ein.
+1. Wechsele mit `cd ServerContainers` in den Ordner mit den "Container-Bauplänen" und führe dort den Befehl `sudo docker-compose up -d` aus um diese zu erzeugen.
+    1. Zeit zum Kaffee kochen
+1. Gehe im Browser auf `http://localhost:84/setup/` gehen oder an einem anderen Rechner im gleichen Netzwerk auf `http://<server-ip>:84/setup/`. Die Verbindung zur ipFire kann auch erstmal übersprungen und später eingerichtet werden, so dass nur der persönliche Admin-Zugang vergeben werden muss.
+1. Fertig.
+1. Die Administrationsoberfläche ist unter `http://<serveradresse>:84/ui/` oder per https (selbstsigniertes Zertifikat) unter `https://<serveradresse>:447/ui/` zu erreichen.
+
+## ipFire
+
+Für die Internetsperre ist ein [IPFire-Router](https://www.ipfire.org/) nötig, der separat installiert werden muss. Wird die Internetsperre von PhilleConnect (erstmal) nicht benötigt tut auch jeder andere Router.
+
+## Nutzer hinzufügen
+
+Die einfachste Möglichkeit, viele Nutzer gleichzeitig hinzu zu fügen, ist der Import mit Hilfe einer CSV-Datei, die mit jedem Tabellenkalkulationsprogramm wie LibreOffice Calc oder MS Excel erstellt werden kann.
+
+Die Import-Tabelle sollte den Vornamen, den Nachnamen, das Geburtsdatum und die Klasse (für Lehrer hier z.B. "Lehrer" eintragen) beinhalten.
+
+Auch können hier Passworte z.B. aus dem alten Schulnetzwerksystem oder aus einem Passwortgenerator enthalten sein.
+
+Beim Speichern/Exportieren einfach für das Dateiformat "Text/CSV" oder gleichwertiges auswählen.
+
+Ggf. wird beim speichern noch nachgefragt welche Trennzeichen verwendet werden sollen ein , tut als Feldtrenner seine Dienste, ein Texttrenner (bei LibreOffice standardmässig ") sollte _nicht_ verwendet werden.
+
+Die exportierte CSV-Datei kann dann mit einem Texteditor geöffnet und per copy-paste im CSV-Importer der Admin-Oberfläche hinzugefügt werden.
+
+Alles weitere ist auf der Seite selbst erklärt.
+
+## Konfigurationsprofile
+
+Die Konfigurationsprofile legen zum Beispiel fest welche Netzlaufwerke für eine Gruppe von Rechnern nach dem Anmelden eingebunden werden soll. So können z.B. für unterschiedliche Räume unterschiedliche Tauschlaufwerke eingerichtet werden.
+
+**Wichtig:** Die _SMB Server URL_ sollte in der normalen Installation die IP-Adresse des Servers beinhalten (prinzipiell ermöglicht PhilleConnect auch den Zugriff auf externe Samba-Server)
+
+Der Servicemode schaltet für alle Rechner, denen das Profil zugewiesen ist, den Login aus.
 
 ## Client
 
-Dies ist so einfach, dass erst eine Anleitung folgt wenn wir bei der Stable-Version sind.
+In der Admin-Oberfläche findet sich unter _clientinstallation_ ein Link zum Download des aktuellen Installers, welcher z.B. auf einem USB-Stick gespeichert werden kann.
 
-Einfach den [Client-Installer Downloaden](https://github.com/philleconnect/ClientSetup-Windows/blob/master/Installer/PhilleConnectSetup.exe) und auf dem Client-PC ausführen, den Rest erklärt der Installer.
+In dem gleichen Verzeichnis sollte auch die Konfigurationsdatei liegen die Ebenfalls auf der Seite erstellt werden kann.
 
-Nicht vergessen: Dem Client nach der Registrierung am Server ein Konfigurationsprofil über die Admin-Oberfläche zuweisen!
+**Wichtig:** Achten Sie darauf, dass vor dem Klick auf _Installationsdatei erstellen_ die Parameter, **insbesondere die Server-URL (=IP-Adresse des Servers)** korrekt eingetragen ist!
+
+Nach der Installation des Clients, die durch den Installer erklärt wird, ist dem PC noch in der Admin-Oberfläche unter _Rechnerverwaltung_ noch ein Konfigurationsprofil zu zu ordnen.

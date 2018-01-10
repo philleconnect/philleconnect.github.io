@@ -1,33 +1,41 @@
 h1 {
     font-weight: normal;
+    float:none;
 }
 
 h2 {
     font-weight: normal;
     font-size: 1.5em;
+    float:none;
 }
 
 h3 {
     font-weight: normal;
     font-size: 1.2em;
-    margin: 3.5em 0 0 0;
+    margin: 1.5em 0 0 0;
+    float:none;
 }
 
 p {
     margin: 0 0 0.5em 0;
+    float:none;
 }
 
 ul {
-    line-height: 1.5;
+    line-height: 1.5em;
+}
+ol {
+    margin-left: 1.5em;
+    line-height: 1.8em;
 }
 
 
 code.highlighter-rouge {
-  background-color: #49483E;
-  border: 1px solid #ccc;
-  padding: 3px;
-  border-radius: 3px;
-  color: #FFFFFF;
+    background-color: #49483E;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 3px;
+    color: #FFFFFF;
 }
 
 

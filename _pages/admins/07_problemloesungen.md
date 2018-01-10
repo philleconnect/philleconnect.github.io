@@ -8,6 +8,10 @@ lang: de
 
 # **PROBLEM**LÖSUNGEN
 
+(Diese Seite wird ergänzt wenn uns relevante Probleme zugetragen werden)
+
+Sie können **mit `Strg` + `F` diese Seite durchsuchen**!
+
 ### Nachricht "Konfigurationsfehler. Programm wird beendet." beim Login oder Teacher/Drive-Client
 Prüfen Sie folgendes:
 * Ist der Rechner in der Administrationsoberfläche registriert (mit der richtigen MAC-Adresse)?

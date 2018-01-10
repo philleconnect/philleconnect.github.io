@@ -89,3 +89,9 @@ Jedoch haben uns so viele Dinge an LANiS gestört, dass wir uns entschieden habe
 Gleichzeitig ist LANiS nicht Quelloffen, viele Ideen konnten wir nicht umsetzen, einige Entwicklungen waren aus unserer Sicht eher zum Schaden als zum Nutzen. Die Zukunftsfähigkeit wird nicht nur von uns bezweifelt, die allgemeine Softwarequalität und die Unübersichtlichkeit gaben schließlich den Ausschlag unsere eigene Lösung zu entwickeln.
 
 Siehe auch: [Philosophie](/Allgemein) oder [Umstieg](/admins/Umstieg)
+
+### Ich habe etwas bei der Konfiguration falsch gemacht/nur mal rum gespielt, wie kann ich die **Container samt der Installation wieder löschen** und von vorne anfangen?
+
+Wenn die `./dev/cleanup.sh` ausführen wird jede Konfiguration samt Datenbanken, LDAP etc. gelöscht.
+
+Führen Sie dies niemals für ein bereits laufendes System aus, da alle Daten unwiederbringlich verloren gehen!

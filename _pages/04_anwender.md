@@ -8,15 +8,20 @@ lang: de
 
 # **ANWENDER**INFO
 
+PhilleConnect strebt an, für Endanwender möglichst vollständig selbsterklärend zu sein, auch für jüngere SchülerInnen.
+
+Daher findet sich hier nicht viel Information: Einfach ausprobieren!
+
+Dennoch in aller Kürze:
+
 ## Wichtige Grundlagen
 
 * Die PhilleConnect Drive Anwendung muss nach dem Anmelden offen bleiben, beim Schließen erfolgt automatisch die Abmeldung.
-* Nach der Anmeldung stehen, je nach Konfiguration durch den Admin, unterschiedliche Laufwerke unter Windows zur Verfügung, in die Dateien gespeichert oder diese nur gelesen werden können.
+* Nach der Anmeldung stehen, je nach Konfiguration durch den Admin, unterschiedliche Laufwerke unter Windows zur Verfügung, in die Dateien gespeichert oder auch nur gelesen werden können ("Template" oder "Vorlagen"-Laufwerke).
 * Jeder Nutzer hat ein eigenes Laufwerk, auf das nur der Benutzer selbst (und der Administrator) Zugriff hat.
-* Das eigene Passwort ist verschlüsselt, auch der Administrator hat keinen Zugriff, er kann es lediglich bei Bedarf neu setzen.
+* Das eigene Passwort ist verschlüsselt, auch der Administrator hat keinen Zugriff, er und andere Lehrer können es lediglich bei Bedarf neu setzen.
 * Im PC-Raum hat der Lehrer Zugriff auf die Schülermonitore (Fernsteuerung, Monitorsperre, Internetsperre)
-* Der Lehrer kann im PC-Raum Schülern, die ihr Passwort vergessen haben, ein neues zuweisen
 
 ## Fortgeschrittene Funktionen
 
-* Eigene Rechner können, sofern sie im gleichen Netz eingebucht sind, auf Ihr Laufwerk und die Tauschlaufwerke zugreifen. Informationen wie erhalten sie vom Administrator.
+* Eigene Rechner können, sofern sie im gleichen Netz eingebucht sind (bedarfsweise den Admin fragen), auf Ihr Laufwerk und die Tauschlaufwerke zugreifen. Wie das geht weiß der Administrator.

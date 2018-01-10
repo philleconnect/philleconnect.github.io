@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Wartung
-permalink: /admin/Wartung
+title: Betrieb
+permalink: /admins/Betrieb
 tags: Admins
 lang: de
 ---
 
-# **WARTUNG**
+# **BETRIEB**
 
 ## Alltag
 

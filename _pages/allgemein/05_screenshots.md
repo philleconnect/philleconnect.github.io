@@ -8,6 +8,14 @@ lang: de
 
 # **SCREEN**SHOTS
 
+![Teacher Client]({{baseurl}}/assets/images/ScreenTeacherWin10.png)
+
+Der TeacherClient in unserer Testinstallation unter Windows 10
+
+![Teacher Client]({{baseurl}}/assets/images/ScreenAdminProfil2.png)
+
+Die Administrationsoberfläche ist komplett Webbasiert.
+
 ![Teacher Client]({{baseurl}}/assets/images/ScreenTeacher.png)
 
 Der TeacherClient nach der Anmeldung

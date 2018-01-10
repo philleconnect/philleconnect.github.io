@@ -1,25 +1,33 @@
 ---
 layout: page
-title: Admin
-permalink: /Admin
+title: Admins
+permalink: /Admins
 tags: main
 lang: de
 ---
 
 # **ADMIN**INFO
 
-Sie sind IT-Administrator Ihrer Schule?
+## Informationen für IT-Beauftragte/Schul-Administratoren und Mitarbeiter von Medienzentren
 
-Oder Mitarbeiter eines Medienzentrums?
+Alle wichtigen Informationen sind in den jeweiligen Kategorieen zu finden:
 
-Dann finden Sie Hier alle Informationen, die zur Standard-Installation und für den Tagesbetrieb notwendig sind.
+### [Installation](/admins/Installation)
 
-PhilleConnect können Sie dabei ohne tiefere Kenntnisse von bestimmten Systemen installieren und betreiben. Sie müssen nur ein Ubuntu-System installieren und wenige Befehle in die Kommandozeile kopieren. Der Rest erfolgt bequem auf der Benutzeroberfläche für Administratoren.
+Die, sehr einfache, Installation des Servers und der Clients. Schritt für Schritt.
 
-Bitte beachten Sie aber zur Zeit noch, dass PhilleConnect bislang nur als Beta-Version vorliegt.
+### [Umstieg](/admins/Umstieg)
 
-**WIR HOFFEN BIS ENDE 2017 EINE VON JEDERMANN EINSETZBARE VERSION VERÖFFENTLICHEN ZU KÖNNEN!**
+Das vorhandene System kann in aller Regel parallel zu einem PhilleConnect-Setup betrieben werden. Ein Umstieg ist damit weder mit einer Downtime für das Schulnetz verbunden noch ist eine Mammutsitzung des IT-Beauftragten in den Ferien nötig.
 
-Der Zeitplan sieht gut aus: Seit den Herbstferien läuft das System im Produktivbetrieb an unserer Schule. Die letzten echten Bugs haben schon Lösungen bei uns.
+### [Betrieb](/admins/Betrieb)
 
-Solange PhilleConnect jedoch nur als Interne Beta-Version vorliegt ist die Dokumentation noch unvollständig, eine Installation ist allenfalls zu Testzwecken zu empfehlen.
+Alle wichtigen Aufgaben für den Alltag wie Datensicherung, Nutzerdatenimport, Serverumzug oder Wiedereinrichtung nach z.B. Hardwaredefekten.
+
+### [ProblemLösungen](/admins/ProblemLoesungen)
+
+Eine Referenz für mögliche Probleme, die bei der Installation oder dem Betrieb auftreten könnten
+
+### [FAQ](/admins/Faq)
+
+Fragen und Antworten rund um PhilleConnect, vor oder nach der Installation, die Admins unabhängig von konkreten Problemen zu PhilleConnect haben könnten.

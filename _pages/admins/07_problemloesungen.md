@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ProblemLösungen
-permalink: /admin/ProblemLoesungen
+permalink: /admins/ProblemLoesungen
 tags: Admins
 lang: de
 ---

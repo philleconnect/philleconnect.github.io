@@ -46,14 +46,14 @@ muss nur
 
 Um den Server auf die neueste stabile Version zu updaten müssen auf der Kommandozeile in dem Ordner `ServerContainers`
 
-1. mit `docker-compose down` die Server-Container angehalten werden
+1. mit `sudo docker-compose down` die Server-Container angehalten werden
 2. mit `git pull` die aktuellsten "Container-Baupläne geholt werden und schließlich
-3. mit `docker-compose up -d --build` die Server-Container neu erstellt und gestartet werden. (was viel schneller geht als bei der ersten Installation!)
+3. mit `sudo docker-compose up -d --build` die Server-Container neu erstellt und gestartet werden. (was viel schneller geht als bei der ersten Installation!)
 
 ## Server stoppen und starten
 
 Der Server kann wie jedes andere System heruntergefahren werden.
 
-Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `docker-compose up -d` gestartet werden.
+Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden.
 
-Entsprechend können diese auch mit `docker-compose down` angehalten werden.
+Entsprechend können diese auch mit `sudo docker-compose down` angehalten werden.

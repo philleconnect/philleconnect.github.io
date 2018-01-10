@@ -28,11 +28,9 @@ permalink: /index.html
 
 ### **Fertig: PhilleConnect ist ab sofort als Stable Version v1.0.0 verfügbar!** (5.1.2018)
 
-(Diese Webseite hingegen ist noch im Beta-Statium, die Dokumentation wird in den nächsten Tagen noch vervollständigt!)
-
 Und so sieht's aus: [Screenshots](/allgemein/Screenshots)!
 
-Zum [installieren](/admin/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server)-System:
+Kurzanleitung zur [Installation](/admin/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server)-System:
 * Auf der Kommandozeile `sudo apt-get install docker docker-compose git` ausführen
 * dann mit `git clone http://github.com/philleconnect/ServerContainers/` PhilleConnect docker-Anweisungen holen
 * mit `cd ServerContainers` in den passenden Ordner wechseln und bedarfsweise in der Datei `settings.env` eigene Passwörter vergeben

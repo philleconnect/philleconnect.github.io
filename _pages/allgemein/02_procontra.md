@@ -26,6 +26,7 @@ Ein kurzer Leistungsüberblick in Stichpunkten aus unserer Sicht
 * Monitorkontrolle und -sperre
 * Internetsperre (in Kombination mit einem ipFire-Router)
 * Administration komplett über Weboberfläche
+* Sehr schneller Systemstart der Clients (Verzögerung < 2sec.)
 
 ## Contra
 

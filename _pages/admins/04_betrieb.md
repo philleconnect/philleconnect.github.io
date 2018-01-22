@@ -54,6 +54,6 @@ Um den Server auf die neueste stabile Version zu updaten müssen auf der Kommand
 
 Der Server kann wie jedes andere System heruntergefahren werden.
 
-Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden. Sinnvoll ist es zuvor mit `sudo docker-compose down` sicher zu stellen dass alles zuvor korrekt angehalten wurde oder wird.
+Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden.
 
-Entsprechend können diese auch mit `sudo docker-compose down` angehalten werden.
+Sinnvoll ist es zuvor mit `sudo docker-compose down` sicher zu stellen dass alles zuvor korrekt angehalten wurde oder wird.

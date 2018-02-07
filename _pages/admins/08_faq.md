@@ -48,11 +48,13 @@ Auch wenn speziell TimeForKids auf ipFire basiert, ist diese Lösung nicht mehr 
 
 ### Beinhaltet PhilleConnect einen **Festplattenschutz**, wie er in vielen Schulen die PCs vor Veränderung und Manipulation schützt?
 
-Leider nein.
+Nein.
 
-Hier setzen wir selbst noch eine kommerzielle Lösung ein.
+Microsoft Windows hat dafür die Lösung [Disk Protection](https://docs.microsoft.com/en-us/windows-server/remote/multipoint-services/enable-or-disable-disk-protection) vorgesehen. Also nicht zu viele Köche an den Brei lassen!
 
-Wenn Sie geeignete freie Software kennen, die wir integrieren könnten, lassen Sie es uns wissen!
+(Wir selbst kennen es auch erst seit kurzem und müssen es noch ausprobieren, ob es unsere bisherige kommerzielle Lösung ersetzen kann)
+
+Für Linux bietet es sich da die Systempartition mit der `/ets/fstab` als read-only zu mounten.
 
 ### Gibt es einen **Klausur- oder Test-Modus** um Klassenarbeiten und Klausuren zu schreiben?
 

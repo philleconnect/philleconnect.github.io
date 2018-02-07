@@ -50,7 +50,9 @@ Auch wenn speziell TimeForKids auf ipFire basiert, ist diese Lösung nicht mehr 
 
 Nein.
 
-Microsoft Windows hat dafür die Lösung [Disk Protection](https://docs.microsoft.com/en-us/windows-server/remote/multipoint-services/enable-or-disable-disk-protection) vorgesehen. Also nicht zu viele Köche an den Brei lassen!
+Microsoft Windows hat dafür die Lösung [Disk Protection](https://docs.microsoft.com/en-us/windows-server/remote/multipoint-services/enable-or-disable-disk-protection) vorgesehen, für manche mag das eine Lösung sein, jedoch setzt dies auf den MultiPoint-Services auf, was nicht für jedermann brauchbar sein dürfte.
+
+Eine alternative ist die Arbeit mit [Restore Points](https://msdn.microsoft.com/en-us/library/aa378910(VS.85).aspx) was wir uns in absehbarer Zeit mal genauer anschauen wollen.
 
 (Wir selbst kennen es auch erst seit kurzem und müssen es noch ausprobieren, ob es unsere bisherige kommerzielle Lösung ersetzen kann)
 

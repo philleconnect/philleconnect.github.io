@@ -34,7 +34,7 @@ Kurzanleitung zur [Installation](/admins/Installation) auf einem [Ubuntu](https:
 * Auf der Kommandozeile `sudo apt-get install docker docker-compose git` ausführen
 * dann mit `git clone http://github.com/philleconnect/ServerContainers/` PhilleConnect docker-Anweisungen holen
 * mit `cd ServerContainers` in den passenden Ordner wechseln und bedarfsweise in der Datei `settings.env` eigene Passwörter vergeben
-* und mit `sudo docker-compose up -d` die Server-Container starten
+* und mit `sudo docker-compose up -d` die Server-Container bauen und starten (dauert nur beim ersten Start so lange).
 
 Fertig ist die Serverlandschaft mit LDAP, Samba und PhilleConnect-Adminoberfläche, die unter `http://localhost:84/setup/` konfiguriert und mit einem Zugangspasswort versehen werden kann. Dort findet sich auch ein Link zum [Download des Client-Installers](https://github.com/philleconnect/ClientSetup-Windows/releases).
 

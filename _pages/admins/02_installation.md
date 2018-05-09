@@ -28,6 +28,8 @@ Die Installation des Servers im Detail. Für ein Testsystem können auch einzeln
 8. Fertig.
 9. Die Administrationsoberfläche ist unter `http://<serveradresse>:84/ui/` oder per https (selbstsigniertes Zertifikat) unter `https://<serveradresse>:447/ui/` zu erreichen.
 
+*Tipp:* Um bei jedem Systemstart automatisch Docker mit zu starten muss in neueren Ubuntu-Versionen einmal `sudo systemctl enable docker.service` ausgeführt werden.
+
 ## ipFire
 
 Für die Internetsperre ist ein [IPFire-Router](https://www.ipfire.org/) nötig, der separat installiert werden muss. Wird die Internetsperre von PhilleConnect (erstmal) nicht benötigt tut auch jeder andere Router.

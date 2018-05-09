@@ -44,6 +44,19 @@ Höchst wahrscheinlich liegt ein Konfigurations- oder Netzwerkfehler vor, der ni
 
 Prüfen Sie dann ob der Rechner eine korrekte IP-Adresse zugewiesen bekommt und er den Server erreichen kann.
 
+### Nach einem **Neustart des Servers** ist der Server (Adminoberfläche, Login im Client etc.) **nicht erreichbar**
+Bei neueren Dockerversionen ist der Start von Docker mit dem Betriebssystem nicht mehr standartmäßig aktiviert. Dies kann dauerhaft aktiviert werden in dem einmal
+
+```
+sudo systemctl enable docker.service
+```
+
+ausgeführt wird.
+
+Ein manueller Start des Docker daemons erfolgt indem man z.B. `docker ps` eintippt und dann die gestarteten Container angezeigt bekommt.
+
+Aus dem Ordner, wo die `docker-compose.yml` liegt kann auch die Containerlandschaft manuell mit `docker-compose up -d` gestarted werden.
+
 ### Fehlt ein Fehler?
 
 Schreiben Sie uns was fehlt in einer aussagekräftigen eMail an `it [ät] polarwinkel [punkt] de` !

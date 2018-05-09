@@ -54,6 +54,6 @@ Um den Server auf die neueste stabile Version zu updaten müssen auf der Kommand
 
 Der Server kann wie jedes andere System heruntergefahren werden.
 
-Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden.
+Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden. Wenn Docker automatisch mit dem Systemstart mit gestartet werden soll muss einmal auf dem Hostsystem `sudo systemctl enable docker.service` ausgeführt werden.
 
 Sinnvoll ist es zuvor mit `sudo docker-compose down` sicher zu stellen dass alles zuvor korrekt angehalten wurde oder wird.

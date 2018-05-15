@@ -18,6 +18,22 @@ oder verschlüsselt (mit einem selbst-signierten Zertifikat, muss einmal im Brow
 
 `http://<serveradresse>:447/ui/`
 
+## Update
+
+Ein Serverupdate ist denkbar einfach:
+
+1. auf der Kommandozeile in den Ordner `ServerContainers` wechseln. Dies kann gerne auch per ssh aus der Ferne geschehen, z.B. mit dem freien ssh-client [PuTTY](https://de.wikipedia.org/wiki/PuTTY).
+2. mit `git pull` die aktuellsten "Container-Baupläne" holen und schließlich
+3. mit `sudo docker-compose up -d --build` die veränderten Server-Container neu erstellen und starten. (was viel schneller geht als bei der ersten Installation)
+
+## Server stoppen und starten
+
+Der Server kann wie jedes andere System heruntergefahren werden.
+
+Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden. Wenn Docker automatisch mit dem Systemstart mit gestartet werden soll muss einmal auf dem Hostsystem `sudo systemctl enable docker.service` ausgeführt werden.
+
+Sinnvoll ist es zuvor mit `sudo docker-compose down` sicher zu stellen dass alles zuvor korrekt angehalten wurde oder wird.
+
 ## Datensicherung
 
 Es müssen nur von drei Orten Backups erstellt werden um das ganze Netzwerksystem nach vollständigem Verlust wieder herzustellen:
@@ -32,8 +48,6 @@ Es müssen nur von drei Orten Backups erstellt werden um das ganze Netzwerksyste
 
 3. Weiterhin müssen natürlich die Samba-Laufwerke mit den Nutzerdaten gesichert werden. Bei der Installation findet sich in dem _ServerContainers_-Ordner ein Unterordner `mount/` der diese in der Standardeinstellung beinhaltet.
 
-
-
 ### Nach einem Totalausfall
 
 muss nur
@@ -41,19 +55,3 @@ muss nur
 1. PhilleConnect neu installiert und die Einstellungen aus der `settings.env`-Datei übernommen werden,
 2. der Ordner `/var/lib/docker/volumes` wieder durch das Backup ersetzt
 3. und die Laufwerksdaten wieder an Ort und Stelle gebracht werden.
-
-## Update
-
-Um den Server auf die neueste stabile Version zu updaten müssen auf der Kommandozeile in dem Ordner `ServerContainers`
-
-1. mit `sudo docker-compose down` die Server-Container angehalten werden
-2. mit `git pull` die aktuellsten "Container-Baupläne" geholt werden und schließlich
-3. mit `sudo docker-compose up -d --build` die Server-Container neu erstellt und gestartet werden. (was viel schneller geht als bei der ersten Installation)
-
-## Server stoppen und starten
-
-Der Server kann wie jedes andere System heruntergefahren werden.
-
-Nach dem Start des Betriebssystems können die Container aus dem Ordner _ServerContainers_ mit `sudo docker-compose up -d` gestartet werden. Wenn Docker automatisch mit dem Systemstart mit gestartet werden soll muss einmal auf dem Hostsystem `sudo systemctl enable docker.service` ausgeführt werden.
-
-Sinnvoll ist es zuvor mit `sudo docker-compose down` sicher zu stellen dass alles zuvor korrekt angehalten wurde oder wird.

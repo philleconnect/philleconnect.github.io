@@ -38,11 +38,13 @@ Die Heimat von PhilleConnect ist die Schule von [Wau Holland](https://de.wikiped
 
 Passwörter werden verschlüsselt - keine Frage. Auch die von Schülern. Sie dürfen auch nicht vom Admin oder nach einem erfolgreichen Hack einsehbar sein.
 
-Schutz gegen Manipulation oder "kreativer Nutzung" ist jedoch *keine* Frage der Sicherheit.
+Auch ist es Schülern nicht möglich das System an sich nachhaltig zu stören oder zu manipulieren.
 
-Dem natürlichen Spieldrang von SchülerInnen sollte Rechnung getragen werden, all zu leicht sollte sich der Unterricht nicht stören lassen, insbesondere auch um weniger versierten KollegInnen eine motivierende Arbeit am PC zu ermöglichen.
+Schutz gegen Unterrichtsstörungen innerhalb eines Klassenraumes ist jedoch *keine* Frage der Sicherheit!
 
-Ein beliebiger Schutz vor Manipulation ist jedoch weder möglich noch zielführend. Offensive Störungen sind Gelegenheiten für padagogisches Wirken! So ist es ohnehin nicht möglich, SchülerInnen davon abzuhalten Tasten zu vertauschen, sehr versierte Schüler schaffen es sicherlich auch, Dinge wie den VNC-Dienst zu blockieren. Oder den Unterricht einfach durch quatschen zu stören. Eine pädagogische Chance in einer freien Welt!
+Dem natürlichen Spieldrang von SchülerInnen sollte selbstverständlich angemessen begegnet werden, all zu leicht sollte sich der Unterricht nicht stören lassen, insbesondere auch um weniger versierten KollegInnen eine motivierende Arbeit am PC zu ermöglichen.
+
+Ein beliebiger Schutz vor (selbstheilender) Manipulation oder "kreativer Nutzung" ist jedoch weder möglich noch zielführend. Offensive Störungen sind Gelegenheiten für padagogisches Wirken! So ist es ohnehin nicht möglich, SchülerInnen davon abzuhalten Tasten zu vertauschen, sehr versierte Schüler schaffen es sicherlich auch, Dinge wie den VNC-Dienst zu blockieren. Oder den Unterricht einfach durch quatschen zu stören. Eine pädagogische Chance in einer freien Welt!
 
 Oder schließen Sie in Ihrer Schule die Tafeln nach dem Unterricht ab, damit keine SchülerInnen Herzchen oder Penisse daran malen?
 

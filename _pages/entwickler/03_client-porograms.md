@@ -24,11 +24,11 @@ The RunOnceCreator will be installed by the installer as well.
 
 ## START
 
-The Login-screen that is shown when you boot up Windows.
+The Login-screen that is shown when you boot up your OS.
 
 ## RunOneCreator
 
-The RunOnceCreator takes care that the Login-Application will be started every time Windows boots up.
+Windows-specific: The RunOnceCreator takes care that the Login-Application will be started every time Windows boots up.
 
 ## Systemclient
 
@@ -37,7 +37,3 @@ This controls the Access to student PCs.
 ## ClientRegistrationTool
 
 This makes it easy to add new Client PCs to the Server.
-
-## Lockscreen
-
-...guess from the name!

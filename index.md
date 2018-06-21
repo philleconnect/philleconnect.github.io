@@ -26,9 +26,11 @@ permalink: /index.html
  
 </div>
 
+## Aktuelles:
+
 ### **Optionaler Container RadiusServer** (22.6.2018)
 
-PhilleConnect kann ab sofort zum authentifizierten Login z.B. ins WLan eingesetzt werden. Natürlich mit den vorhandenen Login-Daten.
+PhilleConnect kann ab sofort zum authentifizierten Login ins WLan eingesetzt werden. Natürlich mit den vorhandenen Login-Daten.
 
 Hier gibt's mehr Info's für [Admins](/admins/RadiusServer) oder [Anwender](/anwender/WLan)!
 

@@ -29,3 +29,11 @@ Hier eine Beispielkonfiguration:
 ![WLan identifizieren]({{baseurl}}/assets/images/ScreenRadiusAccessPoint.png)
 
 Dabei ist die `172.16.0.102` durch die IP des eigenen PhilleConnect-Servers zu ersetzen.
+
+## Unterscheidung zwischen Lehrern und Schülern
+
+In der `settings.env`-datei findet sich eine Einstellung ob der Server nur Lehrer oder alle Benutzer zulassen soll.
+
+Wird beides im Schulnetz benötigt, z.B. weil die Access-Points, die auch für Schüler sind, ein isoliertes Netz zur Verfügung stellen, so können problemlos zwei Container parallel gestartet werden.
+
+Für den zweiten Container müssen dann nur in der `docker-compose.yml` andere Ports als öffentliche Ports angegeben werden wenn es auf dem gleichen Server läuft. Je nach eingestelltem Port im Access-Point werden dann nur Lehrer oder auch Schüler zugelassen.

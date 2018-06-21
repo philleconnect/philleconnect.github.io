@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Betrieb
+title: RadiusServer
 permalink: /admins/RadiusServer
 tags: Admins
 lang: de
@@ -26,6 +26,6 @@ Schließlich mit `docker-compose up -d` den Container Bauen und starten - fertig
 
 Hier eine Beispielkonfiguration:
 
-![WLan identifizieren]({{baseurl}}/assets/images/ScreenWLanWin7_1.png)
+![WLan identifizieren]({{baseurl}}/assets/images/ScreenRadiusAccessPoint.png)
 
 Dabei ist die `172.16.0.102` durch die IP des eigenen PhilleConnect-Servers zu ersetzen.

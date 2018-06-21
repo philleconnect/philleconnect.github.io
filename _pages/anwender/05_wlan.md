@@ -21,18 +21,28 @@ Im Einzelnen für die jeweiligen Betriebssysteme:
 
 ## Android
 
-* 
+Einfach das WLan identifizieren und obige Werte an entsprechender Stelle eintragen.
 
-## Windows
+## Windows (7)
 
 Unter Windows 7 **muss** die Software des Geräteherstellers für die Verbindung mit dem WLan verwendet werden, da Microsoft die Unterstützung für GTC nicht eingebaut hat.
 
 Hier ein Beispiel-Setup mit der Intel-Software auf einem Dell-Notebook:
 
-![WLan identifizieren]({{baseurl}}/assets/images/ScreenWLanWin7_1.png)
+![WLan verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_1.png)
 
-![WLan identifizieren]({{baseurl}}/assets/images/ScreenWLanWin7_2.png)
+WLan mit der Hersteller-Software identifizieren...
 
-![WLan identifizieren]({{baseurl}}/assets/images/ScreenWLanWin7_3.png)
+![WLan ]({{baseurl}}/assets/images/ScreenWLanWin7_2.png)
+
+... verbinden klicken ...
+
+![WLan eintragungen]({{baseurl}}/assets/images/ScreenWLanWin7_3.png)
+
+... `WPA2-TKIP` mit `PEAP` und `GTC` auswählen, Benutzername und Passwort eintragen ...
 
 ![WLan identifizieren]({{baseurl}}/assets/images/ScreenWLanWin7_4.png)
+
+... und "Zertifikat validieren" deaktivieren.
+
+(Da in einem internen Netz das Zertifikat nicht von einer CA validiert werden kann ist dies notwendig)

@@ -26,6 +26,18 @@ permalink: /index.html
  
 </div>
 
+### **Optionaler Container RadiusServer** (22.6.2018)
+
+PhilleConnect kann ab sofort zum authentifizierten Login z.B. ins WLan eingesetzt werden. Natürlich mit den vorhandenen Login-Daten.
+
+Hier gibt's mehr Info's für [Admins](/admins/RadiusServer) oder [Anwender](/anwender/WLan)!
+
+### **SummerStable 2018: v1.2.0 macht PhilleConnect fit für den Schuljahreswechsel** (4.6.2018)
+
+Alle unsere ToDo's sind abgearbeitet, so gibt es eine sehr mächtige Funktion zum Jahrgangsübergang und viele weitere, auch weitgehende Verbesserungen und fixes.
+
+Hier gibt's die Infos [wie man das Update einspielt](/admins/Betrieb) - ganz einfach und im laufenden Betrieb!
+
 ### **Fertig: PhilleConnect ist ab sofort als Stable Version v1.0.0 verfügbar!** (5.1.2018)
 
 Und so sieht's aus: [Screenshots](/allgemein/Screenshots)!

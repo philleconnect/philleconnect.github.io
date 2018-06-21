@@ -30,8 +30,8 @@ permalink: /index.html
 
 Und so sieht's aus: [Screenshots](/allgemein/Screenshots)!
 
-Kurzanleitung zur [Installation](/admins/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server){:target="_blank"}-System:
-* Auf der Kommandozeile `sudo apt-get install docker docker-compose git` ausführen
+Kurzanleitung zur [Installation](/admins/Installation) auf einem [Ubuntu](https://www.ubuntu.com/download/server){:target="_blank"} 18.04LTS-System:
+* Auf der Kommandozeile `sudo apt install docker.io docker-compose git` ausführen
 * dann mit `git clone http://github.com/philleconnect/ServerContainers/` PhilleConnect docker-Anweisungen holen
 * mit `cd ServerContainers` in den passenden Ordner wechseln und bedarfsweise in der Datei `settings.env` eigene Passwörter vergeben
 * und mit `sudo docker-compose up -d` die Server-Container bauen und starten (dauert nur beim ersten Start so lange).

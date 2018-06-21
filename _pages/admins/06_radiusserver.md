@@ -10,7 +10,7 @@ lang: de
 
 ## Was das ist
 
-Ein Radiusserver hat sich als Standart gemausert um die Benutzerauthentifizierung für zum Beispiel WLan-Zugänge zu übernehmen.
+Ein Radiusserver hat sich als Standard gemausert um die Benutzerauthentifizierung für zum Beispiel WLan-Zugänge zu übernehmen.
 
 PhilleConnect bietet als Optionalen Container einen Radiusserver an, der z.B. in (auch sehr günstigen) WLan-Access-Points eingerichtet werden kann. Benutzer können dann als WLan-Zugangskennung ihren PhilleConnect-Login verwenden.
 

@@ -12,37 +12,46 @@ Sofern die WLan-Authentifizierung mit den PhilleConnect-Logins eingerichtet ist 
 
 * Authentifizierungstyp **WPA2 Enterprise**
 * EAP-Methode **PEAP**
-* Phase 2 Authentifizierung **GTC**
+* Falls Einstellung möglich: Phase 2 Authentifizierung **MS-CHAPv2** (oder wahlweise GTC)
 * Identität **persönlicher PhilleConnect Benutzername**
 * Passwort **persönliches PhilleConnect Passwort**
-* je nach System CA-Zertifikat immer akzeptieren/nicht prüfen/nicht angegeben oder vergleichbares auswählen
+* je nach System **CA-Zertifikat immer akzeptieren/nicht prüfen/nicht angegeben** oder vergleichbares auswählen
 
 Im Einzelnen für die jeweiligen Betriebssysteme:
 
 ## Android
 
-Einfach das WLan identifizieren und obige Werte an entsprechender Stelle eintragen.
+Einfach das WLan identifizieren, verbinden und im Verbindungsdialog obige Werte eintragen.
 
-## Windows (7)
+![WLan mit Android verbinden]({{baseurl}}/assets/images/ScreenWLanAndroid.png)
 
-Unter Windows 7 **muss** die Software des Geräteherstellers für die Verbindung mit dem WLan verwendet werden, da Microsoft die Unterstützung für GTC nicht eingebaut hat.
+## Windows 10
 
-Hier ein Beispiel-Setup mit der Intel-Software auf einem Dell-Notebook:
+Windows 10 fragt bei der Verbindung ob dem Zertifikat vertraut wird, dies muss bestätigt werden.
 
-![WLan verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_1.png)
+Die Frage nach dem Benutzernamen und Passwort erscheint beim Verbinden.
 
-WLan mit der Hersteller-Software identifizieren...
+## macOS
 
-![WLan ]({{baseurl}}/assets/images/ScreenWLanWin7_2.png)
+Es muss nur der Benutzername und das Kennwort eintragen werden und die bei der Nachfrage nach dem Zertifikat "Vertrauen" ausgewählt werden.
 
-... verbinden klicken ...
+## Windows 7
 
-![WLan eintragungen]({{baseurl}}/assets/images/ScreenWLanWin7_3.png)
+Leider kann Windows 7 noch nicht die Konfiguration automatisch erkennen.
 
-... `WPA2-TKIP` mit `PEAP` und `GTC` auswählen, Benutzername und Passwort eintragen ...
+Hier muss insbesondere manuell eingestellt werden, dass das Zertifikat nicht geprüft werden soll.
 
-![WLan identifizieren]({{baseurl}}/assets/images/ScreenWLanWin7_4.png)
+Dazu:
 
-... und "Zertifikat validieren" deaktivieren.
+* Bei der Anzeige der Drahtlosnetzwerke auf "Netzwerk- und Freigabecenter" klicken
+* Links auf "Drahtlosnetzwerke verwalten"
+* "Hinzufügen"
+* "manuell erstellen"
+* Nun den Netzwerknamen (SSID) eintragen, den Sicherheitstyp "WPA2-Enterprise" und den Verschlüsselungstyp "TKIP"
+* "Verbindungseinstellungen andern" anklicken
+* "Einstellungen" -> "Serverzertifikat überprüfen" deaktivieren
+* In dem gleichen Fenster !Authentifizierungsmethode" "Gesichertes Kennwort (EAP-MSCHAP v2)"
+* Nach dem Klick auf "Konfigurieren..." noch das Häkchen in dem Eigenschaftenfenster entfernen
+* Zu guter Letzt nach dem Klick auf "Erweiterte Einstellungen" den Authentifizierungsmodus auf "Benutzerauthentifizierung" stellen
 
-(Da in einem internen Netz das Zertifikat nicht von einer CA validiert werden kann ist dies notwendig)
+Nun wird beim Verbinden mit dem WLan ein Dialogfenster angezeigt, in dem der Benutzername und das Passwort abgefragt werden.

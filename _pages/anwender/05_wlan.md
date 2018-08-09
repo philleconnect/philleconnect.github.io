@@ -37,32 +37,53 @@ Es muss nur der Benutzername und das Kennwort eintragen werden und die bei der N
 
 ## Windows 7
 
-Leider kann Windows 7 noch nicht die Konfiguration automatisch erkennen, so dass einmalig etwas Handarbeit nötig ist.
-Hier muss insbesondere manuell eingestellt werden, dass das Zertifikat nicht geprüft werden soll.
+Leider kann Windows 7 noch nicht die Konfiguration automatisch erkennen, so dass einmalig **zwei Minuten Handarbeit** nötig sind.
 
 Im Einzelnen:
 
 * Bei der Anzeige der Drahtlosnetzwerke auf "Netzwerk- und Freigabecenter" klicken
+
 	![WLan mit Android verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_1.png)
+	
 * Links auf "Drahtlosnetzwerke verwalten"
+
 	![WLan mit Android verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_2.png)
+	
 * "Hinzufügen"
+
 	![WLan mit Android verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_3.png)
+	
 * "manuell erstellen"
+
 	![WLan mit Android verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_4.png)
+	
 * Nun den Netzwerknamen (SSID) eintragen, den Sicherheitstyp "WPA2-Enterprise" und den Verschlüsselungstyp "TKIP"
+
 	![WLan mit Android verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_5.png)
+	
 * "Verbindungseinstellungen andern" anklicken
+
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_6.png)
+	
 * "Einstellungen" -> "Serverzertifikat überprüfen" deaktivieren
+
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_7.png)
+	
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_8.png)
+	
 * In dem gleichen Fenster !Authentifizierungsmethode" "Gesichertes Kennwort (EAP-MSCHAP v2)"
+
 * Nach dem Klick auf "Konfigurieren..." noch das Häkchen in dem Eigenschaftenfenster entfernen
+
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_9.png)
+	
 * Zu guter Letzt nach dem Klick auf "Erweiterte Einstellungen" den Authentifizierungsmodus auf "Benutzerauthentifizierung" stellen
+
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_10.png)
+	
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_11.png)
+	
 
 Nun wird beim Verbinden mit dem WLan ein Dialogfenster angezeigt, in dem der Benutzername und das Passwort abgefragt werden.
+
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_12.png)

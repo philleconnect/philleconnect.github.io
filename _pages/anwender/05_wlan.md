@@ -71,7 +71,7 @@ Im Einzelnen:
 	
 	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_8.png)
 	
-* In dem gleichen Fenster !Authentifizierungsmethode" "Gesichertes Kennwort (EAP-MSCHAP v2)"
+* In dem gleichen Fenster "Authentifizierungsmethode" > "Gesichertes Kennwort (EAP-MSCHAP v2)"
 
 * Nach dem Klick auf "Konfigurieren..." noch das Häkchen in dem Eigenschaftenfenster entfernen
 
@@ -86,4 +86,4 @@ Im Einzelnen:
 
 Nun wird beim Verbinden mit dem WLan ein Dialogfenster angezeigt, in dem der Benutzername und das Passwort abgefragt werden.
 
-	![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_12.png)
+![WLan mit Windows 7 verbinden]({{baseurl}}/assets/images/ScreenWLanWin7_12.png)

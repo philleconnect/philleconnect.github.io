@@ -31,9 +31,11 @@ Windows 10 fragt bei der Verbindung ob dem Zertifikat vertraut wird, dies muss b
 
 Die Frage nach dem Benutzernamen und Passwort erscheint beim Verbinden.
 
-## macOS
+## macOS/iOS
 
 Es muss nur der Benutzername und das Kennwort eintragen werden und die bei der Nachfrage nach dem Zertifikat "Vertrauen" ausgewählt werden.
+
+Unter macOS (PCs/Notebooks) wird noch das Administratorpasswort abgefragt um das Zertifikat zu akzeptieren.
 
 ## Windows 7
 

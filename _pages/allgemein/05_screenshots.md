@@ -30,7 +30,7 @@ Anzeige der Schülermonitore, mit einem Klick können diese per VNC vergrößert
 
 ![Reset Student Password]({{baseurl}}/assets/images/RSPForm.png)
 
-Hier mal unter Windows 10: Lehrer können Schüler ein vergessenes Passwort neu setzen lassen. Die Passwörter sind natürlich nicht einsehbar und sind auf dem Server verschlüsselt.
+Hier mal unter Windows 8.1: Lehrer können Schüler ein vergessenes Passwort neu setzen lassen. Die Passwörter sind natürlich nicht einsehbar und sind auf dem Server verschlüsselt.
 
 ![Student Client]({{baseurl}}/assets/images/ScreenDrive.png)
 

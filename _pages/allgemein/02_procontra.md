@@ -16,7 +16,7 @@ Ein kurzer Leistungsüberblick in Stichpunkten aus unserer Sicht
 
 * Freie Software
 * Einfache Installation und Wartung
-* Systemübergreifend (Linux-Client gegenwärtig (Januar 2018) in Arbeit)
+* Systemübergreifend (Unterstützt werden Windows und Linux)
 * Eigene Geräte (BYOD) können genutzt werden
 * Modular
 * selbst erweiterbar

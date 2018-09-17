@@ -12,7 +12,10 @@ lang: de
   <div class="about-content">
     <h2>Dirk Winkel</h2>
     <img class="about-image" alt="Dirk Winkel" src="/assets/images/dwinkel.jpg"/>
-
+    Als Lehrer für Informatik und Physik bin ich auch der IT-Beauftragte meiner Schule.<br />
+    Mit jahrzehntelanger Erfahrung im Linux-Bereich und der Überzeugung, dass freie Software in aller Regel die besten Lösungen bietet, entwarf ich die Architektur von PhilleConnect.<br />
+    Neben der Systemarchitektur arbeite ich stetig an der Wartung und Pflege von PhilleConnect. Meine Schwerpunkte liegen dabei bei der System- und Containerentwicklung.<br />
+    Dabei steht aus meiner Sicht der pädagogische Nutzen und die Einfachheit und Verlässlichkeit der Systempflege im Vordergrund.
   </div>
   <div class="about-content">
     <h2>Johannes Kreutz</h2>

@@ -30,7 +30,7 @@ permalink: /index.html
 
 ### **ftp-Server als optionaler Container** (9.12.2018)
 
-Als Nebenprodukt bei der Entwicklung eines Nextcloud-Servers mit Zugriff auf die persönliches Laufwerke ist ein ftp-Server im Container entstanden.
+Als Nebenprodukt bei der Entwicklung eines Nextcloud-Servers mit Zugriff auf die persönlichen Laufwerke ist ein ftp-Server im Container entstanden.
 
 Einfach mit `git clone https://github.com/philleconnect/ftpServer` klonen und mit `docker-compose up -d` starten!
 

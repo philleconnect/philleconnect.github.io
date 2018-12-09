@@ -28,6 +28,12 @@ permalink: /index.html
 
 ## Aktuelles:
 
+### **ftp-Server als optionaler Container** (9.12.2018)
+
+Als Nebenprodukt bei der Entwicklung eines Nextcloud-Servers mit Zugriff auf die persönliches Laufwerke ist ein ftp-Server im Container entstanden.
+
+Einfach mit `git clone https://github.com/philleconnect/ftpServer` klonen und mit `docker-compose up -d` starten!
+
 ### **Optionaler Container RadiusServer** (22.6.2018)
 
 PhilleConnect kann ab sofort zum authentifizierten Login ins WLan eingesetzt werden. Natürlich mit den vorhandenen Login-Daten.

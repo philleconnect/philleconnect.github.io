@@ -34,6 +34,8 @@ Als Nebenprodukt bei der Entwicklung eines Nextcloud-Servers mit Zugriff auf die
 
 Einfach mit `git clone https://github.com/philleconnect/ftpServer` klonen und mit `docker-compose up -d` starten!
 
+Eine genauere Anleitung, ggf. auch zum verschlüsselten Zugriff, wird bald folgen.
+
 ### **Optionaler Container RadiusServer** (22.6.2018)
 
 PhilleConnect kann ab sofort zum authentifizierten Login ins WLan eingesetzt werden. Natürlich mit den vorhandenen Login-Daten.

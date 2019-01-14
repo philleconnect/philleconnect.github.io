@@ -28,11 +28,13 @@ permalink: /index.html
 
 ## Aktuelles:
 
-### **Nectcloud- und OnlyOffice-Integration: Laufwerkszugriff auch von zu Hause** (14.1.2019)
+### **Nectcloud- und OnlyOffice-Integration: Laufwerkszugriff auch von zu Hause (Beta)** (14.1.2019)
 
 Ab sofort steht ein automatisches Setup für einen integrierten NextCloud-Container samt OnlyOffice-Installation bereit.
 
 Alle Laufwerke sind damit von überall zugreifbar und Office-Dokumente sind sogar mit beliebigen Geräten direkt im Browser zu bearbeiten - und das sogar zeitgleich von mehreren Nutzern.
+
+Beta-Testing: Wir setzen es bereits produktiv ein, ein paar Kleinigkeiten werden wir aber noch anpassen bevor wir es "stable" nennen.
 
 Zu den [Info's für den Admin](/admins/NextCloud)
 

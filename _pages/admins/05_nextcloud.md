@@ -37,7 +37,7 @@ Für den Zugriff aus dem Internet muss schließlich noch der entsprechende Zugan
 
 Etwas Erfahrung oder Recherche zum Thema "Eigene Dienste am Internetanschluss freigeben" ist hierfür leider unumgänglich.
 
-In unserer Umgebung wurde ein nginx-reverse-proxy (PhilleConnect HttpLpagAuth) mit folgender Konfiguration eingesetzt:
+In unserer Umgebung wurde ein nginx-reverse-proxy (PhilleConnect HttpLdapAuth) mit folgender Konfiguration eingesetzt:
 
 ```
 # NextCloud:

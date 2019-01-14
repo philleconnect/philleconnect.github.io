@@ -28,6 +28,14 @@ permalink: /index.html
 
 ## Aktuelles:
 
+### **Nectcloud- und OnlyOffice-Integration: Laufwerkszugriff auch von zu Hause** (14.1.2019)
+
+Ab sofort steht ein automatisches Setup für einen integrierten NextCloud-Container samt OnlyOffice-Installation bereit.
+
+Alle Laufwerke sind damit von überall zugreifbar und Office-Dokumente sind sogar mit beliebigen Geräten direkt im Browser zu bearbeiten - und das sogar zeitgleich von mehreren Nutzern.
+
+Zu den [Info's für den Admin](/admins/NextCloud)
+
 ### **ftp-Server als optionaler Container** (9.12.2018)
 
 Als Nebenprodukt bei der Entwicklung eines Nextcloud-Servers mit Zugriff auf die persönlichen Laufwerke ist ein ftp-Server im Container entstanden.

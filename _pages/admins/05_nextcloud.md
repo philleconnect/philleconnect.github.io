@@ -18,7 +18,9 @@ Darüber hinaus ist die freie Browser-basierte Office Suite OnlyOffice integrier
 
 Und noch besser: Die Dateien können für andere Nutzer freigegeben werden und mit OnlyOffice sogar zeitgleich bearbeitet werden. Echte Kollaboration, wie es in die Schule gehört!
 
-Die häuftigsten Zugriffe auf die Daten in der Schule erfolgen sicherlich von dort aus. Es macht also Sinn die Daten dort zu lagern, sogar ganz unabhängig von Datenschutzüberlegungen. Beim Zugriff von ausserhalb des Schulnetzes wird dann auch nur der gerenderte Ausschnitt aus dem gerade geöffneten Dokument übertragen. Das macht auch bei schmalbandigem Upload den Zugriff auf und die Bearbeitung von aufgeblasenen Präsentationen problemlos möglich!
+Die häuftigsten Zugriffe auf die Daten in der Schule erfolgen sicherlich von dort aus. Es macht also Sinn die Daten dort zu lagern, sogar ganz unabhängig von Datenschutzüberlegungen. Beim Zugriff von ausserhalb des Schulnetzes wird dann auch nur der gerenderte Ausschnitt aus dem gerade geöffneten Dokument übertragen. Das ermöglicht auch bei schmalbandigem Upload das Bearbeiten von aufgeblasenen Präsentationen.
+
+Bitte Beachten: Wir setzten die Container bereits produktiv ein, nennen es aber vorsichtshalber noch Beta, ein paar Kleinigkeiten und möglicherweise weitere Vereinfachungen der Installation werden noch bis zum stable-Release vorgenommen.
 
 ## Wie einrichten?
 
@@ -34,6 +36,7 @@ Für den Zugriff aus dem Internet muss schließlich noch der entsprechende Zugan
 * Port-Weiterleitungen
 * Proxy-Server für verschlüsselten Zugriff
     * hierfür kann z.B. der PhilleConnect HttpLdapAuth-Container verwendet werden.
+* Empfohlen: Verschlüsselter https-Zugriff mit z.B. Let's Encrypt zertifikaten (https ist für die OnlyOffice-Integration voreingestellt, bei unverschlüsseltem Zugriff z.B. für Testbetrieb über die Nextcloud-Admin-Oberfläche ändern!)
 
 Etwas Erfahrung oder Recherche zum Thema "Eigene Dienste am Internetanschluss freigeben" ist hierfür leider unumgänglich.
 
@@ -70,3 +73,39 @@ server {
     }
 }
 ```
+
+Für unseren https-proxy verwenden wir folgende config:
+
+```
+# NextCloud:
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    ssl_certificate /etc/letsencrypt/live/cloud.domain.tld/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.domain.tld/privkey.pem;
+    server_name cloud.domain.tld;
+    location / {
+        proxy_set_header        Host                $host;
+        proxy_set_header        X-Real-IP           $remote_addr;
+        proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+        proxy_pass http://172.16.0.102:86/;
+    }
+}
+# OnlyOffice:
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    ssl_certificate /etc/letsencrypt/live/onlyoffice.domain.tld/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/onlyoffice.domain.tld/privkey.pem;
+    server_name onlyoffice.domain.tld;
+    location / {
+        proxy_set_header        Host                $host;
+        proxy_set_header        X-Forwarded-Proto   https;
+        proxy_set_header        X-Real-IP           $remote_addr;
+        proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+        proxy_pass http://172.16.0.102:82/;
+    }
+}
+```
+
+TODO: Teile der Konfiguration wird möglicherweise bis zum stable-Release in PhilleConnect Nextcloud integriert.

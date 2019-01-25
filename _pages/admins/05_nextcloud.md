@@ -40,21 +40,29 @@ Für den Zugriff aus dem Internet muss schließlich noch der entsprechende Zugan
 
 Etwas Erfahrung oder Recherche zum Thema "Eigene Dienste am Internetanschluss freigeben" ist hierfür leider unumgänglich.
 
-In unserer Umgebung wurde ein nginx-reverse-proxy (PhilleConnect HttpLdapAuth) mit folgender Konfiguration eingesetzt:
+In unserer Umgebung wird ein nginx-reverse-proxy (z.B. PhilleConnect HttpLdapAuth, zusätzlich mit Let's Encrypt Zertifikaten verrsorgt) mit folgender Konfiguration eingesetzt. Dabei hat der Host, auf dem PhilleConnect samt NextCloud läuft, die IP `172.16.0.100`, dies ist, genau wie die Domain, entsprechend dem eigenen Setup anzupassen.
 
 ```
 # NextCloud:
+server {
+    listen 80;
+    listen [::]:80;
+    server_name cloud.domain.tld;
+    return 301 https://cloud.domain.tld$request_uri;
+}
 server {
     listen 443 ssl;
     listen [::]:443 ssl;
     ssl_certificate /etc/letsencrypt/live/cloud.domain.tld/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/cloud.domain.tld/privkey.pem;
     server_name cloud.domain.tld;
+    client_max_body_size 0;
     location / {
+        client_max_body_size 0;
         proxy_set_header        Host                $host;
         proxy_set_header        X-Real-IP           $remote_addr;
         proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
-        proxy_pass http://172.16.0.102:86/;
+        proxy_pass http://172.16.0.100:86/;
     }
 }
 # OnlyOffice:
@@ -69,41 +77,7 @@ server {
         proxy_set_header        X-Forwarded-Proto   https;
         proxy_set_header        X-Real-IP           $remote_addr;
         proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
-        proxy_pass http://172.16.0.102:82/;
-    }
-}
-```
-
-Für unseren https-proxy verwenden wir folgende config:
-
-```
-# NextCloud:
-server {
-    listen 443 ssl;
-    listen [::]:443 ssl;
-    ssl_certificate /etc/letsencrypt/live/cloud.domain.tld/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/cloud.domain.tld/privkey.pem;
-    server_name cloud.domain.tld;
-    location / {
-        proxy_set_header        Host                $host;
-        proxy_set_header        X-Real-IP           $remote_addr;
-        proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
-        proxy_pass http://172.16.0.102:86/;
-    }
-}
-# OnlyOffice:
-server {
-    listen 443 ssl;
-    listen [::]:443 ssl;
-    ssl_certificate /etc/letsencrypt/live/onlyoffice.domain.tld/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/onlyoffice.domain.tld/privkey.pem;
-    server_name onlyoffice.domain.tld;
-    location / {
-        proxy_set_header        Host                $host;
-        proxy_set_header        X-Forwarded-Proto   https;
-        proxy_set_header        X-Real-IP           $remote_addr;
-        proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
-        proxy_pass http://172.16.0.102:82/;
+        proxy_pass http://172.16.0.100:82/;
     }
 }
 ```

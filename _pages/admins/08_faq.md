@@ -33,11 +33,11 @@ Eine (kostenlose) Lösung für die Software-Verteilung hat das Computermagazin C
 Sollte jemand eine freie Lösung zum Beispiel als Docker-Container [entwickeln](/Entwickler) nehmen wir diese gerne als optionalen Container mit auf.
 
 ### Beinhaltet PhilleConnect eine **Imaging-Lösung** um fertige Installationen auf mehreren Rechnern zu verteilen.
-Nein.
+Nein. Siehe auch oben.
 
-Siehe auch oben.
+Wir empfehlen hierfür die Open-Source-Lösung [FOG-Project](https://fogproject.org), die sehr Leistungsfähig uns flexibel ist, einschließlich einiger Aufgaben nach dem Imagen.
 
-Wir haben jedoch eine Imaging-Lösung auf der Grundlage eines Netzwerk-Debian-Systems und der Verwaltung des Image-Masters in VirtualBox in Betrieb. Zumindest den Boot-Server und eine Anleitung zur Image-Verwaltung möchten wir bei Zeiten als optionalen Container für PhilleConnect zur Verfügung stellen.
+Möglicherweise werden wir hierfür in Zukunft ein SnapIn zu Verfügung stellen, welches nach dem Imagen automatisch den PhilleConnect-Client installiert.
 
 ### Muss ich einen **ipFire-Router** in der Schule einsetzen?
 Nein, jedoch funktioniert dann die Internetsperre nicht.

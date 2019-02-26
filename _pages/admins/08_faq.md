@@ -35,7 +35,7 @@ Sollte jemand eine freie Lösung zum Beispiel als Docker-Container [entwickeln](
 ### Beinhaltet PhilleConnect eine **Imaging-Lösung** um fertige Installationen auf mehreren Rechnern zu verteilen.
 Nein. Siehe auch oben.
 
-Wir empfehlen hierfür die Open-Source-Lösung [FOG-Project](https://fogproject.org), die sehr Leistungsfähig uns flexibel ist, einschließlich einiger Aufgaben nach dem Imagen.
+Wir empfehlen hierfür die Open-Source-Lösung [FOG-Project](https://fogproject.org), die sehr Leistungsfähig uns flexibel ist, einschließlich einiger Aufgaben nach dem Imagen. Das [ALP Dillingen](https://alp.dillingen.de/) hat dazu eine [gute Anleitung](http://schulnetz.alp.dillingen.de/materialien/Fog.pdf) bereit gestellt.
 
 Möglicherweise werden wir hierfür in Zukunft ein SnapIn zu Verfügung stellen, welches nach dem Imagen automatisch den PhilleConnect-Client installiert.
 

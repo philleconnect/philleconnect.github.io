@@ -12,6 +12,8 @@ lang: de
 
 Die Installation des Servers im Detail. Für ein Testsystem können auch einzelne Punkte übersprungen werden.
 
+*Wichtig:* Es sind für die Installation und den Betrieb **keine Linux- oder Kommandozeilen-Kenntnisse notwendig**, es reicht vollkommen einmal die hier stehenden Befehle einfach zu kopieren.
+
 1. Installiere auf dem Server **[Ubuntu-Linux](https://ubuntu.com)** (gerne als Server, ist aber eigentlich egal).
     
     Nur für Profis: Dies kann auch in einer Virtuellen Maschiene z.B. auf einem [Proxmox](https://www.proxmox.com){:target="_blank"}-Server geschehen, nur nicht in einem Linux-Container.
@@ -21,7 +23,7 @@ Die Installation des Servers im Detail. Für ein Testsystem können auch einzeln
     2. oder eine statische IP-Adresse vergeben
 3. Führe auf der Kommandozeile `sudo apt-get update && sudo apt-get install docker docker-compose git` aus.
 4. Führe auf der Kommandozeile `git clone http://github.com/philleconnect/ServerContainers/` aus.
-5. Trage in die `settings.env` (mit Texteditor bearbeiten) mindestens in den ersten beiden Optionen eigene Passwörter ein und unter der dritten Option die dauerhafte IP-Adresse des Servers.
+5. Kopiere die `settings.env.default`-Datei nach `settings.env` (Befehl: `cp settings.env.default settings.env`) und trage mindestens in den ersten beiden Optionen eigene Passwörter ein und unter der dritten Option die dauerhafte IP-Adresse des Servers.
 6. Wechsle mit `cd ServerContainers` in den Ordner mit den "Container-Bauplänen" und führe dort den Befehl `sudo docker-compose up -d` aus um diese zu erzeugen.
     1. Zeit zum Kaffee kochen
 7. Gehe im Browser auf `http://localhost:84/setup/` oder an einem anderen Rechner im gleichen Netzwerk auf `http://<server-ip>:84/setup/`. Die Verbindung zur ipFire kann auch erstmal übersprungen und später eingerichtet werden, so dass nur der persönliche Admin-Zugang vergeben werden muss.

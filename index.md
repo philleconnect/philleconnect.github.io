@@ -38,7 +38,7 @@ Weitere Informationen finden sich hier auf der [Admin-Seite für moodle](/admins
 
 Die NextCloud ist bei uns seit über einem Jahr im Produktivbetrieb und hat sich als ausgesprochen stabil und produktiv erwiesen, so dass wir damit ganz entspannt in den Corona-Homeoffice-Modus gehen.
 
-~ Aber eine Einschränkung gibt es: Das integrierte OnlyOffice in der Community-Edition ist nur für bis zu 20 Nutzer freigeschaltet, das ist zu Zeiten von Schulschließungen leider zu knapp für eine vollständige Schulgemeinde im Coronavirus-Heimbetrieb. Wir werden hier an Lösungen arbeiten. ~ Eine Lösung ist gefunden, bei Bedarf bitte kurz bei uns anfragen!
+~~Aber eine Einschränkung gibt es: Das integrierte OnlyOffice in der Community-Edition ist nur für bis zu 20 Nutzer freigeschaltet, das ist zu Zeiten von Schulschließungen leider zu knapp für eine vollständige Schulgemeinde im Coronavirus-Heimbetrieb. Wir werden hier an Lösungen arbeiten.~~ Eine Lösung ist gefunden, bei Bedarf bitte kurz bei uns anfragen!
 
 ### **ftp-Server als optionaler Container** (9.12.2018)
 

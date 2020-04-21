@@ -28,13 +28,13 @@ permalink: /index.html
 
 ## Aktuelles:
 
-### ***moodle-Container ferfügbar** (21.4.2020)
+### **moodle-Container verfügbar** (21.4.2020)
 
-Ab sofort ist ein __Container für die eLearning-Plattform moodle__ verfügbar!
+Ab sofort ist ein Container für die eLearning-Plattform moodle verfügbar!
 
 Weitere Informationen finden sich hier auf der [Admin-Seite für moodle](/admins/moodle) oder in dem [GitHub-Repository für den moodle-Container](https://github.com/philleconnect/moodle).
 
-### **Fit für den Corona-Einsatz** (14.3.2020)
+### **PhilleConnect mit NextCloud-Container samt Officepaket: Fit für den Corona-Einsatz** (14.3.2020)
 
 Die NextCloud ist bei uns seit über einem Jahr im Produktivbetrieb und hat sich als ausgesprochen stabil und produktiv erwiesen, so dass wir damit ganz entspannt in den Corona-Homeoffice-Modus gehen.
 

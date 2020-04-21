@@ -6,15 +6,11 @@ lang: en
 
 # **PHILLE**CONNECT
 
-PhilleConnect is just becoming the next-generation, modular, docker-based free and open source school network solution.
+PhilleConnect is the next-generation, modular, docker-based free and open source school network solution.
 
+For further english information, check out the [GitHub-Pepository](https://github.com/polarwinkel/SchoolConnect/) of the Server!
 
-**EXPECT A STABLE VERSION END OF 2017!**
-
-
-There is hevy development activity at the moment (fall 2017), check out the [GitHub-Pepository](https://github.com/polarwinkel/SchoolConnect/) for a Beta-Version of the Server to give it a try!
-
-The client modules will be published on GitHub soon.
+You will find quite a few client modules like NextCloud, a RadiusServer or moodle on GitHub as well.
 
 ## **NETWORK**STRUCTURE
 

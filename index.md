@@ -28,21 +28,17 @@ permalink: /index.html
 
 ## Aktuelles:
 
+### ***moodle-Container ferfügbar** (21.4.2020)
+
+Ab sofort ist ein __Container für die eLearning-Plattform moodle__ verfügbar!
+
+Weitere Informationen finden sich hier auf der [Admin-Seite für moodle](/admins/moodle) oder in dem [GitHub-Repository für den moodle-Container](https://github.com/philleconnect/moodle).
+
 ### **Fit für den Corona-Einsatz** (14.3.2020)
 
 Die NextCloud ist bei uns seit über einem Jahr im Produktivbetrieb und hat sich als ausgesprochen stabil und produktiv erwiesen, so dass wir damit ganz entspannt in den Corona-Homeoffice-Modus gehen.
 
-Aber eine Einschränkung gibt es: Das integrierte OnlyOffice in der Community-Edition ist nur für bis zu 20 Nutzer freigeschaltet, das ist zu Zeiten von Schulschließungen leider zu knapp für eine vollständige Schulgemeinde im Coronavirus-Heimbetrieb. Wir werden hier an Lösungen arbeiten.
-
-### **Nextcloud- und OnlyOffice-Integration: Laufwerkszugriff auch von zu Hause (Beta)** (14.1.2019)
-
-Ab sofort steht ein automatisches Setup für einen integrierten NextCloud-Container samt OnlyOffice-Installation bereit.
-
-Alle Laufwerke sind damit von überall zugreifbar und Office-Dokumente sind sogar mit beliebigen Geräten direkt im Browser zu bearbeiten - und das sogar zeitgleich von mehreren Nutzern.
-
-Beta-Testing: Wir setzen es bereits produktiv ein, ein paar Kleinigkeiten werden wir aber noch anpassen bevor wir es "stable" nennen.
-
-Zu den [Info's für den Admin](/admins/NextCloud)
+~ Aber eine Einschränkung gibt es: Das integrierte OnlyOffice in der Community-Edition ist nur für bis zu 20 Nutzer freigeschaltet, das ist zu Zeiten von Schulschließungen leider zu knapp für eine vollständige Schulgemeinde im Coronavirus-Heimbetrieb. Wir werden hier an Lösungen arbeiten. ~ Eine Lösung ist gefunden, bei Bedarf bitte kurz bei uns anfragen!
 
 ### **ftp-Server als optionaler Container** (9.12.2018)
 
@@ -57,12 +53,6 @@ Eine genauere Anleitung, ggf. auch zum verschlüsselten Zugriff, wird bald folge
 PhilleConnect kann ab sofort zum authentifizierten Login ins WLan eingesetzt werden. Natürlich mit den vorhandenen Login-Daten.
 
 Hier gibt's mehr Info's für [Admins](/admins/RadiusServer) oder [Anwender](/anwender/WLan)!
-
-### **SummerStable 2018: v1.2.0 macht PhilleConnect fit für den Schuljahreswechsel** (4.6.2018)
-
-Alle unsere ToDo's sind abgearbeitet, so gibt es eine sehr mächtige Funktion zum Jahrgangsübergang und viele weitere, auch weitgehende Verbesserungen und fixes.
-
-Hier gibt's die Infos [wie man das Update einspielt](/admins/Betrieb) - ganz einfach und im laufenden Betrieb!
 
 ### **Fertig: PhilleConnect ist ab sofort als Stable Version v1.0.0 verfügbar!** (5.1.2018)
 

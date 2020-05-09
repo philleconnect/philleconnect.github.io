@@ -45,7 +45,7 @@
                 {
                     "version":"0.0.0",
                     "required":"0.0.0",
-                    "url":"",
+                    "url":"https://jkm-marburg.de/pcsm/radius/service.json",
                     "revert":true
                 }
             ],
@@ -58,7 +58,7 @@
                 {
                     "version":"1.0.0",
                     "required":"1.0.0",
-                    "url":"",
+                    "url":"https://jkm-marburg.de/pcsm/phpldapadmin/service.json",
                     "revert":true
                 }
             ],

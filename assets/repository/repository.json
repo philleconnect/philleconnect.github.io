@@ -12,7 +12,7 @@
                     "revert":true
                 },
                 {
-                    "version":"0.0.3",
+                    "version":"0.0.4",
                     "required":"0.0.1",
                     "url":"https://jkm-marburg.de/pcsm/core_0.0.2/service.json",
                     "revert":true

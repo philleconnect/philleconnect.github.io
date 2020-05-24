@@ -63,6 +63,19 @@
                 }
             ],
             "description":"PhpLdapAdmin fuer Direktzugriff auf die LDAP-Datenbank Ã¼ber eine Weboberfläeche. ACHTUNG: NUR FUER DEBUGGING UND ERFAHRENE ADMINS!."
+        },
+        "clientapi":{
+            "type":"plugin",
+            "subscription":false,
+            "versions":[
+                {
+                    "version":"0.0.1",
+                    "required":"0.0.1",
+                    "url":"https://jkm-marburg.de/pcsm/clientapi/service.json",
+                    "revert":true
+                }
+            ],
+            "description":"API fuer lokale Clientprogramme."
         }
     }
 }

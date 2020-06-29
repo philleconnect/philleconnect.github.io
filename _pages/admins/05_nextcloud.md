@@ -83,3 +83,23 @@ server {
 ```
 
 TODO: Teile der Konfiguration wird möglicherweise bis zum stable-Release in PhilleConnect Nextcloud integriert.
+
+## Updaten
+
+### kleine Updates
+
+Kleine Updates (keine neuen Major-Versionen oder Apps) können entweder über die GUI nach dem Login als admin durchgeführt werden oder, was eher zu empfehlen ist, da bei über 50 Nutzern bei GUI-Updates Probleme auftreten können, auf der Kommandozeile mit
+
+`docker-compose pull`
+
+und dann
+
+`docker-compose up -d`
+
+Bei Problemen kann mit dem Befehl `docker exec -ti nextcloud_fpm /bin/bash` die Kommandozeile der Installation erreicht werden. Dort kann mit `sudo -u www-data php occ maintenance:mode --on` der Wartungsmodus aktiviert werden und anschließend mit `sudo -u www-data php occ upgrade` ein Update durchgeführt werden. Abschließend nicht vergessen mit `sudo -u www-data php occ maintenance:mode --off` den Wartungsmodus wieder zu deaktivieren und mit `exit` schließlich die Kommandozeile im Container wieder verlassen.
+
+### großes Update
+
+Die Major-Version ist aktuell "hardcoded" in unserem GitHub-Repository. Sofern gelegentlich ein `git pull` und `docker-compose up -d` ausgeführt wird wird immer die aktuelle, getestete Version verwendet bzw. mit den beiden Befehlen diese entsprechend geupdated. In der Regel erfolgen unsere Updates zum Beginn der Sommer- oder Weihnachtsferien, wenn ein Update den Schulbetrieb nicht stört.
+
+__Achtung:__ Da NextCloud keine Versionssprünge unterstützt sollte nach längerer Zeit ohne Updates überprüft werden ob sich die Version nur um eins unterscheidet! Ansonsten muss durch Anpassung der Version in der Datei `fpm/Dockerfile` die Version manuell angepasst werden! (Direkt in der ersten Zeile: z.B. bedeutet `FROM nextcloud:19-fpm` die Major-Version 19 von NextCloud)

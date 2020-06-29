@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>HowToCompile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/swiper.css">
+  <link rel="stylesheet" href="/css/pc_web.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://philleconnect.org/entwickler/HowToCompile">
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorien:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                        
+                    
+                        <li>
+                            <a href="/Admins">Admins</a>
+                        </li>
+                    
+                            
+                    
+                        
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                               
+                            
+                                <li><a href="/entwickler/ClientApplications" class="subnav">ClientApplications</a></li>
+                            
+                                
+                            
+                                <li class="active"><a href="/entwickler/HowToCompile" class="subnav">HowToCompile</a></li>
+                            
+                          
+                            
+                                <li><a href="/entwickler/AdminFrontend" class="subnav">AdminFrontend</a></li>
+                            
+                                    
+                            
+                                <li><a href="/entwickler/DockerContainers" class="subnav">DockerContainers</a></li>
+                            
+                              
+                            
+                                <li><a href="/_pages/entwickler/07_docker-for-newbies.html" class="subnav">DockerForNewbies</a></li>
+                            
+                                
+                            
+                                <li><a href="/entwickler/Faq" class="subnav">FAQ</a></li>
+                            
+                               
+                    
+                              
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                     
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+    <div role="main" class="main">
+      <a href="#nav" class="nav-toggle nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">Menu</a>
+      <noscript>
+        <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+      </noscript>
+      <!--<h1>HowToCompile</h1>-->
+   
+    <h1 id="howtocompile"><strong>HOW</strong>TO<strong>COMPILE</strong></h1>
+
+<h2 id="prerequisites">PREREQUISITEs</h2>
+
+<p>To compile the PhilleConnect you’ll need:</p>
+
+<ul>
+  <li><a href="http://www.lazarus-ide.org" target="_blank">The Lazarus FreePascal IDE</a></li>
+  <li>A trunk snapshot of the <a href="https://sourceforge.net/p/synalist/code/HEAD/tree/trunk/" target="_blank">Lazarus Synapse Library</a> (use the ‘download snapshot’ button)</li>
+  <li>A clone of the Application’s Github repository you want to compile, of course</li>
+</ul>
+
+<h2 id="setup-your-build-environment">SETUP YOUR BUILD ENVIRONMENT</h2>
+
+<ul>
+  <li>Navigate to your clone and open the <code class="highlighter-rouge">.lpi</code> file with lazarus.</li>
+  <li>Go to Packages -&gt; load package file.</li>
+  <li>Load the package file of synapse.</li>
+  <li>Go to Project -&gt; Project inspector.</li>
+  <li>Check if all files are found, especially <code class="highlighter-rouge">ssl_openssl.pas</code> and <code class="highlighter-rouge">ssl_openssl_lib.pas</code> from synapse. If they are not found, remove and re-add them.</li>
+  <li>Compile your program!</li>
+</ul>
+
+<h2 id="what-else-do-i-need">WHAT ELSE DO I NEED?</h2>
+
+<p>You will need the OpenSSL library to run the programs.</p>
+
+<ul>
+  <li>On Windows, we recommend to use the two <code class="highlighter-rouge">.DLL</code> files equipped with the <a href="https://github.com/philleconnect/ClientSetup-Windows" target="_blank">ClientSetup for Windows</a>. However, you also can build your own, if you want.</li>
+  <li>On Linux, please install the package <code class="highlighter-rouge">openssl-dev</code></li>
+</ul>
+
+
+
+      <br />
+      <br />
+    </div>
+
+    <footer>
+</footer>
+<script src="/js/responsive-nav.js"></script>
+<script src="/js/swiper.js"></script>
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+  </script>
+
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+  </body>
+
+</html>

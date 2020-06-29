@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>RadiusServer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/swiper.css">
+  <link rel="stylesheet" href="/css/pc_web.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://philleconnect.org/admins/RadiusServer">
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorien:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                        
+                    
+                        
+                        <li>
+                            <a href="/Admins">Admins</a>
+                        </li>
+                           
+                            
+                                <li><a href="/admins/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li><a href="/admins/Umstieg" class="subnav">Umstieg</a></li>
+                            
+                            
+                            
+                                <li><a href="/admins/Betrieb" class="subnav">Betrieb</a></li>
+                            
+                                
+                            
+                                <li><a href="/admins/NextCloud" class="subnav">NextCloud</a></li>
+                            
+                                    
+                            
+                                <li class="active"><a href="/admins/RadiusServer" class="subnav">RadiusServer</a></li>
+                            
+                            
+                            
+                                <li><a href="/admins/ProblemLoesungen" class="subnav">ProblemLösungen</a></li>
+                            
+                          
+                            
+                                <li><a href="/admins/Faq" class="subnav">FAQ</a></li>
+                            
+                                   
+                    
+                            
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                              
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                     
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+    <div role="main" class="main">
+      <a href="#nav" class="nav-toggle nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">Menu</a>
+      <noscript>
+        <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+      </noscript>
+      <!--<h1>RadiusServer</h1>-->
+   
+    <h1 id="radiusserver"><strong>RADIUS</strong>SERVER</h1>
+
+<h2 id="was-das-ist">Was das ist</h2>
+
+<p>Ein Radiusserver hat sich als Standard gemausert um die Benutzerauthentifizierung für zum Beispiel WLan-Zugänge zu übernehmen.</p>
+
+<p>PhilleConnect bietet als Optionalen Container einen Radiusserver an, der z.B. in (auch sehr günstigen) WLan-Access-Points eingerichtet werden kann. Benutzer können dann als WLan-Zugangskennung ihren PhilleConnect-Login verwenden.</p>
+
+<h2 id="wie-einrichten">Wie einrichten?</h2>
+
+<p>Auf dem Server in dem Verzeichnis, in dem auch der Ordner <code class="highlighter-rouge">ServerContainers</code> liegt, einmal <code class="highlighter-rouge">git pull https://github.com/philleconnect/RadiusServer</code> ausführen.</p>
+
+<p>Dann mit <code class="highlighter-rouge">cd RadiusServer</code> in das neue Verzeichnis wechseln und z.B. mit <code class="highlighter-rouge">nano settings.env</code> die Konfigurationsdatei mit eigenen Passwörtern ausstatten.</p>
+
+<p>Schließlich mit <code class="highlighter-rouge">docker-compose up -d</code> den Container Bauen und starten - fertig.</p>
+
+<h2 id="und-die-access-points">Und die Access-Points?</h2>
+
+<p>Hier eine Beispielkonfiguration:</p>
+
+<p><img src="/assets/images/ScreenRadiusAccessPoint.png" alt="WLan identifizieren" /></p>
+
+<p>Dabei ist die <code class="highlighter-rouge">172.16.0.102</code> durch die IP des eigenen PhilleConnect-Servers zu ersetzen.</p>
+
+<h2 id="unterscheidung-zwischen-lehrern-und-schülern">Unterscheidung zwischen Lehrern und Schülern</h2>
+
+<p>In der <code class="highlighter-rouge">settings.env</code>-datei findet sich eine Einstellung ob der Server nur Lehrer oder alle Benutzer zulassen soll.</p>
+
+<p>Wird beides im Schulnetz benötigt, z.B. weil die Access-Points, die auch für Schüler sind, ein isoliertes Netz zur Verfügung stellen, so können problemlos zwei Container parallel gestartet werden.</p>
+
+<p>Für den zweiten Container müssen dann nur in der <code class="highlighter-rouge">docker-compose.yml</code> andere Ports als öffentliche Ports angegeben werden wenn es auf dem gleichen Server läuft. Je nach eingestelltem Port im Access-Point werden dann nur Lehrer oder auch Schüler zugelassen.</p>
+
+
+
+      <br />
+      <br />
+    </div>
+
+    <footer>
+</footer>
+<script src="/js/responsive-nav.js"></script>
+<script src="/js/swiper.js"></script>
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+  </script>
+
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+  </body>
+
+</html>

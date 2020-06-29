@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>NextCloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/swiper.css">
+  <link rel="stylesheet" href="/css/pc_web.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://philleconnect.org/admins/NextCloud">
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorien:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                        
+                    
+                        
+                        <li>
+                            <a href="/Admins">Admins</a>
+                        </li>
+                           
+                            
+                                <li><a href="/admins/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li><a href="/admins/Umstieg" class="subnav">Umstieg</a></li>
+                            
+                            
+                            
+                                <li><a href="/admins/Betrieb" class="subnav">Betrieb</a></li>
+                            
+                                
+                            
+                                <li class="active"><a href="/admins/NextCloud" class="subnav">NextCloud</a></li>
+                            
+                                    
+                            
+                                <li><a href="/admins/RadiusServer" class="subnav">RadiusServer</a></li>
+                            
+                            
+                            
+                                <li><a href="/admins/ProblemLoesungen" class="subnav">ProblemLösungen</a></li>
+                            
+                          
+                            
+                                <li><a href="/admins/Faq" class="subnav">FAQ</a></li>
+                            
+                                   
+                    
+                            
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                              
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                     
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+    <div role="main" class="main">
+      <a href="#nav" class="nav-toggle nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">Menu</a>
+      <noscript>
+        <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+      </noscript>
+      <!--<h1>NextCloud</h1>-->
+   
+    <h1 id="nextcloud"><strong>NEXT</strong>CLOUD</h1>
+
+<h2 id="was-das-ist">Was das ist</h2>
+
+<p>Auch von zu Hause und eigenen Rechnern ist der Zugriff auf die persönlichen Laufwerke möglich. Die freie Software NextCloud, ein Fork der auch sehr bekannten OwnCloud, bietet für den Verzeichniszugriff eine moderne und einfache Oberfläche im Browser an.</p>
+
+<p>Der PhilleConnect-NextCloud-Container integriert dabei den PhilleConnect-LDAP-Verzeichnisdiest, so dass der Zugriff für Anwender mit dem gleichen Benutzernamen und Passwort erfolgt wie die Anmeldung an den Schul-PCs oder, falls vorhanden, am Radius-Server für das Schulische WLan und alle anderen PhilleConnect-Dienste.</p>
+
+<p>Darüber hinaus ist die freie Browser-basierte Office Suite OnlyOffice integriert, die das Bearbeiten von Office-Dokumenten wie Textverarbeitung- oder Präsentationen direkt im Browser ermöglicht, von jedem Endgerät - BYOD willkommen!</p>
+
+<p>Und noch besser: Die Dateien können für andere Nutzer freigegeben werden und mit OnlyOffice sogar zeitgleich bearbeitet werden. Echte Kollaboration, wie es in die Schule gehört!</p>
+
+<p>Die häuftigsten Zugriffe auf die Daten in der Schule erfolgen sicherlich von dort aus. Es macht also Sinn die Daten dort zu lagern, sogar ganz unabhängig von Datenschutzüberlegungen. Beim Zugriff von ausserhalb des Schulnetzes wird dann auch nur der gerenderte Ausschnitt aus dem gerade geöffneten Dokument übertragen. Das ermöglicht auch bei schmalbandigem Upload das Bearbeiten von aufgeblasenen Präsentationen.</p>
+
+<p>Bitte Beachten: Wir setzten die Container bereits produktiv ein, nennen es aber vorsichtshalber noch Beta, ein paar Kleinigkeiten und möglicherweise weitere Vereinfachungen der Installation werden noch bis zum stable-Release vorgenommen.</p>
+
+<h2 id="wie-einrichten">Wie einrichten?</h2>
+
+<p>Auf dem Server in dem Verzeichnis, in dem auch der Ordner <code class="highlighter-rouge">ServerContainers</code> liegt, einmal <code class="highlighter-rouge">git pull https://github.com/philleconnect/Nextcloud</code> ausführen.</p>
+
+<p>Dann mit <code class="highlighter-rouge">cd Nextcloud</code> in das neue Verzeichnis wechseln und z.B. mit <code class="highlighter-rouge">nano settings.env</code> die Konfigurationsdatei mit eigenen Passwörtern und Einstellungen ausstatten.</p>
+
+<p>Schließlich mit <code class="highlighter-rouge">docker-compose up -d</code> die Container Bauen und starten.</p>
+
+<p>Für den Zugriff aus dem Internet muss schließlich noch der entsprechende Zugang eingerichtet werden. Dies hängt von der jeweiligen Situation ab (DSL, Kabel Glasfaser, Router, …) und kann leider nicht automatisch ausgeführt werden. Nötig ist in der Regel:</p>
+
+<ul>
+  <li>Ein DynDNS-Eintrag</li>
+  <li>Port-Weiterleitungen</li>
+  <li>Proxy-Server für verschlüsselten Zugriff
+    <ul>
+      <li>hierfür kann z.B. der PhilleConnect HttpLdapAuth-Container verwendet werden.</li>
+    </ul>
+  </li>
+  <li>Empfohlen: Verschlüsselter https-Zugriff mit z.B. Let’s Encrypt zertifikaten (https ist für die OnlyOffice-Integration voreingestellt, bei unverschlüsseltem Zugriff z.B. für Testbetrieb über die Nextcloud-Admin-Oberfläche ändern!)</li>
+</ul>
+
+<p>Etwas Erfahrung oder Recherche zum Thema “Eigene Dienste am Internetanschluss freigeben” ist hierfür leider unumgänglich.</p>
+
+<p>In unserer Umgebung wird ein nginx-reverse-proxy (z.B. PhilleConnect HttpLdapAuth, zusätzlich mit Let’s Encrypt Zertifikaten verrsorgt) mit folgender Konfiguration eingesetzt. Dabei hat der Host, auf dem PhilleConnect samt NextCloud läuft, die IP <code class="highlighter-rouge">172.16.0.100</code>, dies ist, genau wie die Domain, entsprechend dem eigenen Setup anzupassen.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># NextCloud:
+server {
+    listen 80;
+    listen [::]:80;
+    server_name cloud.domain.tld;
+    return 301 https://cloud.domain.tld$request_uri;
+}
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    ssl_certificate /etc/letsencrypt/live/cloud.domain.tld/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cloud.domain.tld/privkey.pem;
+    server_name cloud.domain.tld;
+    client_max_body_size 0;
+    location / {
+        client_max_body_size 0;
+        proxy_set_header        Host                $host;
+        proxy_set_header        X-Real-IP           $remote_addr;
+        proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+        proxy_pass http://172.16.0.100:86/;
+    }
+}
+# OnlyOffice:
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl;
+    ssl_certificate /etc/letsencrypt/live/onlyoffice.domain.tld/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/onlyoffice.domain.tld/privkey.pem;
+    server_name onlyoffice.domain.tld;
+    location / {
+        proxy_set_header        Host                $host;
+        proxy_set_header        X-Forwarded-Proto   https;
+        proxy_set_header        X-Real-IP           $remote_addr;
+        proxy_set_header        X-Forwarded-For     $proxy_add_x_forwarded_for;
+        proxy_pass http://172.16.0.100:82/;
+    }
+}
+</code></pre></div></div>
+
+<p>TODO: Teile der Konfiguration wird möglicherweise bis zum stable-Release in PhilleConnect Nextcloud integriert.</p>
+
+
+
+      <br />
+      <br />
+    </div>
+
+    <footer>
+</footer>
+<script src="/js/responsive-nav.js"></script>
+<script src="/js/swiper.js"></script>
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+  </script>
+
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+  </body>
+
+</html>

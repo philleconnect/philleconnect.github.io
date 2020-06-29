@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <title>Installation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/swiper.css">
+  <link rel="stylesheet" href="/css/pc_web.css">
+  <link rel="stylesheet" href="/css/syntax.css">
+  <link rel="canonical" href="http://philleconnect.org/admins/Installation">
+</head>
+
+
+  <body>
+
+    <header></header>
+<aside>
+    <div role="navigation" id="foo" class="nav-collapse nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
+        <div class="top">
+            <a href="/index">
+                <img src="/assets/images/logo.png">
+                <li style="font-weight:normal;"><b>PHILLE</b>CONNECT</li>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index" style="color:#fff; text-align:center; font-weight:normal;">Info-Kategorien:</a></li>
+                 
+                    
+                        <li>
+                            <a href="/Allgemein">Allgemein</a>
+                        </li>
+                    
+                          
+                    
+                        <li>
+                            <a href="/Anwender">Anwender</a>
+                        </li>
+                    
+                        
+                    
+                        
+                        <li>
+                            <a href="/Admins">Admins</a>
+                        </li>
+                           
+                            
+                                <li class="active"><a href="/admins/Installation" class="subnav">Installation</a></li>
+                            
+                              
+                            
+                                <li><a href="/admins/Umstieg" class="subnav">Umstieg</a></li>
+                            
+                            
+                            
+                                <li><a href="/admins/Betrieb" class="subnav">Betrieb</a></li>
+                            
+                                
+                            
+                                <li><a href="/admins/NextCloud" class="subnav">NextCloud</a></li>
+                            
+                                    
+                            
+                                <li><a href="/admins/RadiusServer" class="subnav">RadiusServer</a></li>
+                            
+                            
+                            
+                                <li><a href="/admins/ProblemLoesungen" class="subnav">ProblemLösungen</a></li>
+                            
+                          
+                            
+                                <li><a href="/admins/Faq" class="subnav">FAQ</a></li>
+                            
+                                   
+                    
+                            
+                    
+                        <li>
+                            <a href="/Entwickler">Entwickler</a>
+                        </li>
+                    
+                              
+                    
+                        <li>
+                            <a href="/Impressum">Impressum</a>
+                        </li>
+                    
+                     
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+
+
+    <div role="main" class="main">
+      <a href="#nav" class="nav-toggle nav-collapse-0 closed" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">Menu</a>
+      <noscript>
+        <p>Your Browser does not support JavaScript or it is disabled. You need to activate JavaScript to use this site!</p>
+      </noscript>
+      <!--<h1>Installation</h1>-->
+   
+    <h1 id="installieren"><strong>INSTALLIEREN</strong></h1>
+
+<h2 id="server">Server</h2>
+
+<p>Die Installation des Servers im Detail. Für ein Testsystem können auch einzelne Punkte übersprungen werden.</p>
+
+<p><em>Wichtig:</em> Es sind für die Installation und den Betrieb <strong>keine Linux- oder Kommandozeilen-Kenntnisse notwendig</strong>, es reicht vollkommen einmal die hier stehenden Befehle einfach zu kopieren.</p>
+
+<ol>
+  <li>
+    <p>Installiere auf dem Server <strong><a href="https://ubuntu.com">Ubuntu-Linux</a></strong> (gerne als Server, ist aber eigentlich egal).</p>
+
+    <p>Nur für Profis: Dies kann auch in einer Virtuellen Maschiene z.B. auf einem <a href="https://www.proxmox.com" target="_blank">Proxmox</a>-Server geschehen, nur nicht in einem Linux-Container.</p>
+  </li>
+  <li>Sorge dafür, dass dieser Rechner <strong>immer die gleiche IP-Adresse</strong> bekommt
+    <ol>
+      <li>z.B. im Router entsprechend einrichten</li>
+      <li>oder eine statische IP-Adresse vergeben</li>
+    </ol>
+  </li>
+  <li>Führe auf der Kommandozeile <code class="highlighter-rouge">sudo apt-get update &amp;&amp; sudo apt-get install docker docker-compose git</code> aus.</li>
+  <li>Führe auf der Kommandozeile <code class="highlighter-rouge">git clone http://github.com/philleconnect/ServerContainers/</code> aus.</li>
+  <li>Kopiere die <code class="highlighter-rouge">settings.env.default</code>-Datei nach <code class="highlighter-rouge">settings.env</code> (Befehl: <code class="highlighter-rouge">cp settings.env.default settings.env</code>) und trage mindestens in den ersten beiden Optionen eigene Passwörter ein und unter der dritten Option die dauerhafte IP-Adresse des Servers.</li>
+  <li>Wechsle mit <code class="highlighter-rouge">cd ServerContainers</code> in den Ordner mit den “Container-Bauplänen” und führe dort den Befehl <code class="highlighter-rouge">sudo docker-compose up -d</code> aus um diese zu erzeugen.
+    <ol>
+      <li>Zeit zum Kaffee kochen</li>
+    </ol>
+  </li>
+  <li>Gehe im Browser auf <code class="highlighter-rouge">http://localhost:84/setup/</code> oder an einem anderen Rechner im gleichen Netzwerk auf <code class="highlighter-rouge">http://&lt;server-ip&gt;:84/setup/</code>. Die Verbindung zur ipFire kann auch erstmal übersprungen und später eingerichtet werden, so dass nur der persönliche Admin-Zugang vergeben werden muss.</li>
+  <li>Fertig.</li>
+  <li>Die Administrationsoberfläche ist unter <code class="highlighter-rouge">http://&lt;serveradresse&gt;:84/ui/</code> oder per https (selbstsigniertes Zertifikat) unter <code class="highlighter-rouge">https://&lt;serveradresse&gt;:447/ui/</code> zu erreichen.</li>
+</ol>
+
+<p><em>Tipp:</em> Um bei jedem Systemstart automatisch Docker mit zu starten muss in neueren Ubuntu-Versionen einmal <code class="highlighter-rouge">sudo systemctl enable docker.service</code> ausgeführt werden.</p>
+
+<h2 id="ipfire">ipFire</h2>
+
+<p>Für die Internetsperre ist ein <a href="https://www.ipfire.org/">IPFire-Router</a> nötig, der separat installiert werden muss. Wird die Internetsperre von PhilleConnect (erstmal) nicht benötigt tut auch jeder andere Router.</p>
+
+<h2 id="nutzer-hinzufügen">Nutzer hinzufügen</h2>
+
+<p>Die einfachste Möglichkeit, viele Nutzer gleichzeitig hinzu zu fügen, ist der Import mit Hilfe einer CSV-Datei, die mit jedem Tabellenkalkulationsprogramm wie LibreOffice Calc oder MS Excel erstellt werden kann.</p>
+
+<p>Die Import-Tabelle sollte den Vornamen, den Nachnamen, das Geburtsdatum und die Klasse (für Lehrer hier z.B. “Lehrer” eintragen) beinhalten.</p>
+
+<p>Auch können hier Passworte z.B. aus dem alten Schulnetzwerksystem oder aus einem Passwortgenerator enthalten sein.</p>
+
+<p>Beim Speichern/Exportieren einfach für das Dateiformat “Text/CSV” oder gleichwertiges auswählen.</p>
+
+<p>Ggf. wird beim speichern noch nachgefragt welche Trennzeichen verwendet werden sollen. Ein <code class="highlighter-rouge">,</code> tut als Feldtrenner seine Dienste, ein Texttrenner (bei LibreOffice standardmässig <code class="highlighter-rouge">"</code>) sollte <em>nicht</em> verwendet werden.</p>
+
+<p>Die exportierte CSV-Datei kann dann mit einem Texteditor geöffnet und per copy-paste im CSV-Importer der Admin-Oberfläche hinzugefügt werden.</p>
+
+<p>Alles weitere ist auf der Seite selbst erklärt.</p>
+
+<h2 id="konfigurationsprofile">Konfigurationsprofile</h2>
+
+<p>Die Konfigurationsprofile legen zum Beispiel fest, welche Netzlaufwerke für eine Gruppe von Rechnern nach der Anmeldung eingebunden werden sollen. So können z.B. für unterschiedliche Räume unterschiedliche Tauschlaufwerke eingerichtet werden. Hat ein Konfigurationsprofil den gleichen Namen wie der Raum, für den später ein Client registriert wird, so wird der Client automatisch diesem Profil zugewiesen.</p>
+
+<p><strong>Wichtig:</strong> Die <em>SMB Server URL</em> sollte in der normalen Installation die IP-Adresse des Servers beinhalten (prinzipiell ermöglicht PhilleConnect auch den Zugriff auf externe Samba-Server)</p>
+
+<p>Der Servicemode schaltet für alle Rechner, denen das Profil zugewiesen ist, den Login aus.</p>
+
+<h2 id="client">Client</h2>
+
+<p>In der Admin-Oberfläche findet sich unter <em>clientinstallation</em> ein Link zum Download des aktuellen Installers, welcher z.B. auf einem USB-Stick gespeichert werden kann.</p>
+
+<p>In dem gleichen Verzeichnis sollte auch die Konfigurationsdatei liegen die ebenfalls auf der Seite erstellt werden kann.</p>
+
+<p><strong>Wichtig:</strong> Achten Sie darauf, dass vor dem Klick auf <em>Installationsdatei erstellen</em> die Parameter, <strong>insbesondere die Server-URL (=IP-Adresse des Servers) ,ot port 447</strong> korrekt eingetragen ist!</p>
+
+<p>Nach der Installation des Clients, die durch den Installer erklärt wird, ist dem PC noch in der Admin-Oberfläche unter <em>Rechnerverwaltung</em> ein Konfigurationsprofil zu zu ordnen.</p>
+
+
+
+      <br />
+      <br />
+    </div>
+
+    <footer>
+</footer>
+<script src="/js/responsive-nav.js"></script>
+<script src="/js/swiper.js"></script>
+  <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+  })
+  </script>
+
+
+    <script>
+        var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+  </body>
+
+</html>

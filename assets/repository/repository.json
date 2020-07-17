@@ -69,9 +69,9 @@
             "subscription":false,
             "versions":[
                 {
-                    "version":"0.0.1",
-                    "required":"0.0.1",
-                    "url":"https://jkm-marburg.de/pcsm/clientapi/service.json",
+                    "version":"1.0.0",
+                    "required":"1.0.0",
+                    "url":"https://github.com/philleconnect/ClientApi/releases/download/1.0.0/service.json",
                     "revert":true
                 }
             ],

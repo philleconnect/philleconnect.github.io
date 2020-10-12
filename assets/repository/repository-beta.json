@@ -54,7 +54,7 @@
                     "revert":true
                 },
                 {
-                    "version":"2.0.100",
+                    "version":"2.0.9",
                     "required":"0.0.1",
                     "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.100/service.json",
                     "revert":true

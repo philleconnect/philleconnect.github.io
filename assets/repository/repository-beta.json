@@ -82,6 +82,12 @@
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/ServerManager/releases/download/0.9.1/servermanager.tar.gz",
                     "revert":false
+                },
+                {
+                    "version":"1.0.0",
+                    "required":"0.0.0",
+                    "url":"https://github.com/philleconnect/ServerManager/releases/download/1.0.0/servermanager.tar.gz",
+                    "revert":false
                 }
             ]
         },

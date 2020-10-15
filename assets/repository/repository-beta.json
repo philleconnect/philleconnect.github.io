@@ -141,8 +141,8 @@
             "subscription":false,
             "versions":[
                 {
-                    "version":"1.0.0",
-                    "required":"1.0.0",
+                    "version":"0.0.1",
+                    "required":"0.0.0",
                     "url":"https://github.com/philleconnect/SelfService/releases/download/0.0.1/service.json",
                     "revert":true
                 }

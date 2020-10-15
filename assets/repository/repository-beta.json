@@ -135,6 +135,19 @@
                 }
             ],
             "description":"API fuer lokale Clientprogramme."
+        },
+        "selfservice":{
+            "type":"plugin",
+            "subscription":false,
+            "versions":[
+                {
+                    "version":"1.0.0",
+                    "required":"1.0.0",
+                    "url":"https://github.com/philleconnect/SelfService/releases/download/0.0.1/service.json",
+                    "revert":true
+                }
+            ],
+            "description":"Web-GUI für User zur Accountverwaltung"
         }
     }
 }

@@ -64,6 +64,12 @@
                     "required":"0.0.1",
                     "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.101/service.json",
                     "revert":true
+                },
+                {
+                    "version":"2.0.102",
+                    "required":"0.0.1",
+                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.102/service.json",
+                    "revert":true
                 }
             ],
             "description":"Kernprogramme von SchoolConnect."

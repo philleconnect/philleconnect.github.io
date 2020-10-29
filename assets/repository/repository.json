@@ -72,8 +72,14 @@
             "type":"manager",
             "versions":[
                 {
-                    "version":"0.0.0",
-                    "required":"0.0.0",
+                    "version":"1.0.0",
+                    "required":"1.0.0",
+                    "url":"",
+                    "revert":true
+                },
+                {
+                    "version":"1.0.1",
+                    "required":"1.0.0",
                     "url":"",
                     "revert":true
                 }

@@ -112,6 +112,12 @@
                     "required":"2.0.0",
                     "url":"https://github.com/philleconnect/RadiusServer/releases/download/v2.0.2/service.json",
                     "revert":true
+                },
+                {
+                    "version":"2.0.3",
+                    "required":"2.0.0",
+                    "url":"https://github.com/philleconnect/RadiusServer/releases/download/v2.0.3/service.json",
+                    "revert":true
                 }
             ],
             "description":"RADIUS Authentifizierungsserver fuer WPA-Enterprise WiFi Access Points."

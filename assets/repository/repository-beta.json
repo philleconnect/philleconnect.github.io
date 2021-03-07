@@ -193,12 +193,6 @@
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.0/service.json",
                     "revert":true
-                },
-                {
-                    "version":"1.2.1",
-                    "required":"0.0.0",
-                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.1/service.json",
-                    "revert":true
                 }
             ],
             "description":"Web-GUI für User zur Accountverwaltung"

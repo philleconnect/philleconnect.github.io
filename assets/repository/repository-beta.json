@@ -106,6 +106,12 @@
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/ServerManager/releases/download/1.0.0/servermanager.tar.gz",
                     "revert":false
+                },
+                {
+                    "version":"1.1.0",
+                    "required":"0.0.0",
+                    "url":"https://github.com/philleconnect/ServerManager/releases/download/1.1.0/servermanager.tar.gz",
+                    "revert":false
                 }
             ]
         },
@@ -192,6 +198,12 @@
                     "version":"1.2.2",
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.2/service.json",
+                    "revert":true
+                },
+                {
+                    "version":"1.2.3",
+                    "required":"0.0.0",
+                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.3/service.json",
                     "revert":true
                 }
             ],

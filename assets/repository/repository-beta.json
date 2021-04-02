@@ -226,6 +226,19 @@
                 }
             ],
             "description":"Web-GUI für User zur Accountverwaltung"
+        },
+        "Nextcloud":{
+            "type":"plugin",
+            "subscription":false,
+            "versions":[
+                {
+                    "version":"0.0.1",
+                    "required":"0.0.0",
+                    "url":"https://github.com/philleconnect/Nextcloud/archive/refs/tags/compose-test.tar.gz",
+                    "revert":true
+                }
+            ],
+            "description":"Nextcloud mit OnlyOffice"
         }
     }
 }

@@ -136,6 +136,12 @@
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/ServerManager/releases/download/1.1.1/servermanager.tar.gz",
                     "revert":false
+                },
+                {
+                    "version":"1.2.0",
+                    "required":"1.1.1",
+                    "url":"https://github.com/philleconnect/ServerManager/releases/download/1.2.0/servermanager.tar.gz",
+                    "revert":false
                 }
             ]
         },
@@ -241,6 +247,12 @@
                     "version":"0.0.1",
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/Nextcloud/archive/refs/tags/compose-test.tar.gz",
+                    "revert":true
+                },
+                {
+                    "version":"0.0.2",
+                    "required":"0.0.1",
+                    "url":"https://github.com/philleconnect/Nextcloud/archive/refs/tags/test-20.tar.gz",
                     "revert":true
                 }
             ],

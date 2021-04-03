@@ -82,6 +82,12 @@
                     "required":"0.0.1",
                     "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.2.1/service.json",
                     "revert":true
+                },
+                {
+                    "version":"2.2.2",
+                    "required":"0.0.1",
+                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.2.2/service.json",
+                    "revert":true
                 }
             ],
             "description":"Kernprogramme von SchoolConnect."
@@ -111,6 +117,12 @@
                     "version":"1.1.1",
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/ServerManager/releases/download/1.1.1/servermanager.tar.gz",
+                    "revert":false
+                },
+                {
+                    "version":"1.2.0",
+                    "required":"1.1.1",
+                    "url":"https://github.com/philleconnect/ServerManager/releases/download/1.2.0/servermanager.tar.gz",
                     "revert":false
                 }
             ]

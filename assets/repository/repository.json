@@ -234,7 +234,7 @@
                 {
                     "version":"0.0.1",
                     "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/GitLab/releases/download/0.0.1/service.json",
+                    "url":"https://github.com/philleconnect/GitLab/releases/download/0.0.2/service.json",
                     "revert":true
                 }
             ],

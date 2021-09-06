@@ -12,69 +12,15 @@
                     "revert":true
                 },
                 {
-                    "version":"2.0.0",
-                    "required":"0.0.1",
-                    "url":"https://jkm-marburg.de/pcsm/core2/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.0.1",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.1/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.0.2",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.2/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.0.3",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.3/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.0.4",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.4/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.0.5",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.5/service.json",
-                    "revert":true
-                },
-                {
                     "version":"2.0.6",
                     "required":"0.0.1",
                     "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.0.6/service.json",
                     "revert":true
                 },
                 {
-                    "version":"2.1.0",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.1.0/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.1.1",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.1.1/service.json",
-                    "revert":true
-                },
-                {
                     "version":"2.1.2",
                     "required":"0.0.1",
                     "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.1.2/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"2.2.0",
-                    "required":"0.0.1",
-                    "url":"https://github.com/philleconnect/ServerContainers/releases/download/2.2.0/service.json",
                     "revert":true
                 },
                 {
@@ -195,27 +141,9 @@
                     "revert":true
                 },
                 {
-                    "version":"1.1.0",
-                    "required":"0.0.0",
-                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.1.0/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"1.1.1",
-                    "required":"0.0.0",
-                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.1.1/service.json",
-                    "revert":true
-                },
-                {
                     "version":"1.1.2",
                     "required":"0.0.0",
                     "url":"https://github.com/philleconnect/SelfService/releases/download/1.1.2/service.json",
-                    "revert":true
-                },
-                {
-                    "version":"1.2.2",
-                    "required":"0.0.0",
-                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.2/service.json",
                     "revert":true
                 },
                 {
@@ -225,9 +153,9 @@
                     "revert":true
                 },
                 {
-                    "version":"1.2.6",
+                    "version":"1.2.7",
                     "required":"0.0.0",
-                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.6/service.json",
+                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.7/service.json",
                     "revert":true
                 }
             ],

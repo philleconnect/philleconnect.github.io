@@ -30,7 +30,7 @@ permalink: /index.html
 
 ### **moodle-Container verfügbar** (21.4.2020)
 
-Ab sofort ist ein Container für die eLearning-Plattform moodle verfügbar!
+Ab sofort ist ein Container für die eLearning-Plattform moodle verfügbar! 
 
 Weitere Informationen finden sich hier auf der [Admin-Seite für moodle](/admins/moodle) oder in dem [GitHub-Repository für den moodle-Container](https://github.com/philleconnect/moodle).
 

@@ -227,7 +227,7 @@
                 {
                     "version":"1.2.6",
                     "required":"0.0.0",
-                    "url":"https://github.com/philleconnect/SelfService/releases/download/v1.2.5/service.json",
+                    "url":"https://github.com/philleconnect/SelfService/releases/download/1.2.6/service.json",
                     "revert":true
                 }
             ],

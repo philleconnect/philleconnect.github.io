@@ -5,7 +5,9 @@ permalink: /index.html
 
 # **PHILLE**CONNECT
 
-## Schul-IT der nächsten Generation: PhilleConnect ist eine moderne, modulare und anpassbare OpenSource Schulnetzwerk-Lösung
+__Archived: Not actively maintained anymore!__
+
+## PhilleConnect ist eine moderne, modulare und anpassbare OpenSource Schulnetzwerk-Lösung
 
 <div class="swiper-container">
     <!-- Additional required wrapper -->
